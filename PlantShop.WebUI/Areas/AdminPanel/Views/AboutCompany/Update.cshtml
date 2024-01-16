@@ -1,0 +1,92 @@
+﻿@model UpdateAboutCompany
+@{
+    ViewData["Title"] = "Update";
+}
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important;">
+        <!-- Horizontal -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">Update About Company</h3>
+            </div>
+            <div class="block-content block-content-full">
+                <div class="row">
+                    <div class="col-lg-12 space-y-5">
+                        <!-- Form Horizontal - Default Style -->
+                        <form class="space-y-4" method="POST">
+                            <div>
+                                <p class="field-error"><span asp-validation-for="Address" class="text-danger"></span></p>
+                                <p class="field-error"><span asp-validation-for="MapAddress" class="text-danger"></span></p>
+                                <p class="field-error"><span asp-validation-for="Number" class="text-danger"></span></p>
+                                <p class="field-error"><span asp-validation-for="Email" class="text-danger"></span></p>
+                            </div>
+                            <div class="text-danger mb-2 "></div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Address</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.Address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Map Address</label>
+                                <div class="col-sm-8">
+                                    <textarea type="text" asp-for="@Model.MapAddress" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Number</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.Number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Facebook Link</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.FacebookLink" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Instagram Link</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.InstagramLink" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Twitter Link</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.TwitterLink" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 ms-auto">
+                                    <button type="submit" class="btn btn-primary">Update About Company</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END Form Horizontal - Default Style -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Horizontal -->
+    </div>
+    <!-- END Page Content -->
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <style>
+        .field-error {
+            margin: 0px !important;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    </style>
+}

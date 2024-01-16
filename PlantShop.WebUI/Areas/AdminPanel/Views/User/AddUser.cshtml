@@ -1,0 +1,80 @@
+﻿@model RegisterUserDto
+<div class="main-content app-content mt-6">
+    <div class="side-app">
+        <!-- CONTAINER -->
+        <div class="main-container container-fluid">
+            <!-- ROW-1 OPEN -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <form method="POST" class="card">
+                        <div class="card-header">
+                            <div class="card-title">User create</div>
+                        </div>
+                        <div asp-validation-summary="ModelOnly" style="font-style:normal !important" class="text-danger mb-2 "></div>
+                        <div class="card-body">
+                            <div id="updateHome">
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label"> Name :</label>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="@Model.Name" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label">Surname :</label>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="@Model.Surname" class="form-control" placeholder="Surname">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label">Email :</label>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="@Model.Email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label">Phone :</label>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="@Model.Phone" class="form-control" placeholder="Phone / Format : +994555555555" style="margin-bottom:5px">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label"> Password:</label>
+                                    <div class="col-md-9">
+                                        <input type="password" asp-for="@Model.Password" class="form-control" placeholder="Password : minimum 8 characters and one uppercase and one lowercase letter">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label class="col-md-3 form-label">Confirm Password :</label>
+                                    <div class="col-md-9">
+                                        <input type="password" asp-for="@Model.ConfirmPassword" class="form-control" placeholder="Confirm password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <!--Row-->
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-9">
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                                </div>
+                            </div>
+                            <!--End Row-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /ROW-1 CLOSED -->
+        </div>
+        <!-- CONTAINER CLOSED -->
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <style>
+        .validations ul {
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    </style>
+}

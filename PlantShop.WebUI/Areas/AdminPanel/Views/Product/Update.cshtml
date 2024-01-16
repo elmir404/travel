@@ -1,0 +1,121 @@
+﻿@model UpdateProductDto
+@{
+    ViewData["Title"] = "Update";
+}
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important;">
+        <!-- Horizontal -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">Update Product</h3>
+            </div>
+            <div class="block-content block-content-full">
+                <div class="row">
+                    <div class="col-lg-8 space-y-5">
+                    <!-- Form Horizontal - Default Style -->
+                    <form class="space-y-4" method="POST" enctype="multipart/form-data">
+                        <div class="text-danger mb-2 ">
+                            <p class="field-error"><span asp-validation-for="AzName" class="text-danger"></span></p>
+                            <p class="field-error"><span asp-validation-for="EnName" class="text-danger"></span></p>
+                            <p class="field-error"><span asp-validation-for="RuName" class="text-danger"></span></p>
+                            <p class="field-error"><span asp-validation-for="Price" class="text-danger"></span></p>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Az Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" asp-for="@Model.AzName" class="form-control" placeholder="Az Name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">En Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" asp-for="@Model.EnName" class="form-control" placeholder="En Name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Ru Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" asp-for="@Model.RuName" class="form-control" placeholder="Ru Name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Az Description</label>
+                            <div class="col-sm-8">
+                                <textarea type="text" asp-for="@Model.AzDescription" class="form-control" placeholder="Az Description.."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">En Description</label>
+                            <div class="col-sm-8">
+                                <textarea type="text" asp-for="@Model.EnDescription" class="form-control" placeholder="En Description.."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Ru Description</label>
+                            <div class="col-sm-8">
+                                <textarea type="text" asp-for="@Model.RuDescription" class="form-control" placeholder="Ru Description.."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Price</label>
+                            <div class="col-sm-8">
+                                <textarea type="number" asp-for="@Model.Price" class="form-control" placeholder="Price.."></textarea>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Up Price</label>
+                                <div class="col-sm-8">
+                                    <input type="number" asp-for="@Model.UpPrice" class="form-control" placeholder="Up Price..">
+                                </div>
+                            </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-password">Category</label>
+                            <div class="col-sm-8">
+                                <select id="CategoryId" name="CategoryId" style="border-radius: 10px; padding: 5px; width: 100%;">
+                                        @foreach (var category in ViewBag.Categories)
+                                        {
+                                            @if (Model.CategoryId == category.Id)
+                                            {
+                                            <option selected value="@category.Id">@category.AzName</option>
+                                            }
+                                            else
+                                            {
+                                            <option value="@category.Id">@category.AzName</option>
+                                            }
+                                        }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label" for="example-hf-email">Photo</label>
+                            <div class="col-sm-8">
+                                    <input type="file" name="Files" id="Files" class="form-control" accept=" .jpg, .png, image /jpeg, image /png" multiple>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 ms-auto">
+                                <button type="submit" class="btn btn-primary">Update Product</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END Form Horizontal - Default Style -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Horizontal -->
+    </div>
+    <!-- END Page Content -->
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <style>
+        .field-error {
+            margin: 0px !important;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    </style>
+}

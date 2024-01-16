@@ -1,0 +1,95 @@
+﻿@model List<GetCategoryDto>
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important">
+        <!-- Dynamic Table Responsive -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">
+                    Category Table <small>List</small>
+                </h3>
+            </div>
+            <div class="block-content block-content-full">
+                <table id="category-table" class="table table-bordered table-striped table-vcenter js-dataTable-responsive mt-4">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th style="width: 15%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var category in Model)
+                        {
+                            <tr>
+                                <td class="fs-sm">@category.Id</td>
+                                <td class="fw-semibold fs-sm">@category.AzName</td>
+                                <td>
+                                    <div class="btn-list">
+                                        <button onclick=Edit(@category.Id) type="button" class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i></button>
+                                        <button id="@category.Id" type="button" class="btn removee btn-sm btn-danger">Deactive</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Dynamic Table Responsive -->
+    </div>
+    <!-- END Page Content -->
+</main>
+
+@section Scripts{
+    <script>
+        function Edit(id) {
+            location.href = `/AdminPanel/Category/Update?Id=${id}`;
+        }
+        $('#category-table').on('click', '.removee', function () {
+            var table = $('#category-table').DataTable();
+            var id = $(this).attr("id");
+            var thh = $(this);
+
+            Swal.fire({
+                title: 'Are you sure?',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, deactive it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "PATCH",
+                        url: `/AdminPanel/Category/Deactive?Id=${id}`,
+                        success: function (result) {
+                            console.log(result)
+                            if (result.success == true) {
+                                Swal.fire(
+                                    'Deactived!',
+                                    'Your file has been deactive.',
+                                    'success'
+                                ).then((result) => {
+                                    if (result.isConfirmed) {
+                                        table
+                                            .row($(thh).parents('tr'))
+                                            .remove()
+                                            .draw(false);
+
+                                    }
+                                });
+
+                            }
+                            else {
+                                alert(result.message)
+                            }
+                        }
+                    });
+
+                }
+            })
+
+
+        });
+    </script>
+      }

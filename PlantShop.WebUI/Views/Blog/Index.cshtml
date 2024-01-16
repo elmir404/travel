@@ -1,0 +1,363 @@
+﻿@model GetSearchDto
+@{
+    ViewData["Title"] = "Bütün Bitkilər";
+    var istrue = true;
+    var active = "active";
+    int i = 0;
+    int j = 0;
+    int prev = @Model.Products.CurrentPage - 1;
+    int next = @Model.Products.CurrentPage + 1;
+}
+
+   <!-- Breadcrumb -->
+    <section class="breadcrumb-outer text-center">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <h2 class="white">Blog Grid</h2>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog Grid</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <!-- BreadCrumb Ends -->
+
+    <!-- blog starts -->
+    <section class="blog blog-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 pad-left-30 pull-right">
+                    <div class="blog-main">
+                        <div class="row">    
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending5.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending7.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending3.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending5.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending10.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending8.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending7.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 mar-bottom-30">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <div class="grid-image">
+                                            <img src="images/trending3.jpg" alt="blog">
+                                        </div>
+                                        <div class="gridblog-content">
+                                            <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                            <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                            <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <div class="blog-button text-center">
+                                    <a href="blog-single.html" class="biz-btn biz-btn1">Load More</a>
+                                </div> 
+                            </div>
+
+                        </div>    
+                    </div>
+                </div>
+
+                <!-- sidebar starts -->
+                <div class="col-md-4 pad-right-30">
+                    <div class="blog-sidebar">
+                        <div class="author-news mar-bottom-30">
+                            <div class="author-news-content">
+                                <div class="author-thumb">
+                                    <img src="images/inbox1.jpg" alt="author">
+                                </div>
+                                <div class="author-content">
+                                    <span>Author News</span>
+                                    <h4 class="title"><a href="#" class="white">Relson Dulux</a></h4>
+                                    <p class="mar-0">Director / Suplex World</p>
+                                    <div class="header-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <div class="sidebar-item">
+                            <h3>All Categories</h3>
+                            <ul class="sidebar-category">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">Sliders</a></li>
+                                <li class="active"><a href="#">Manage Listings</a></li>
+                                <li><a href="#">Address and Map</a></li>
+                                <li><a href="#">Reservation Requests</a></li>
+                                <li><a href="#">Your Reservation</a></li>
+                                <li><a href="#">Search Results</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-item">
+                            <div class="sidebar-tabs">
+                                <div class="sidebar-navtab text-center">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#popular"><i class="fa fa-check-circle"></i> Most Popular </a></li>
+                                        <li><a data-toggle="tab" href="#recent"><i class="fa fa-check-circle"></i> Recent Post</a></li>
+                                    </ul>
+                                </div>    
+
+                                <div class="tab-content">
+                                    <div id="popular" class="tab-pane fade in active">
+                                        <div class="sidebar-image mar-bottom-20 mar-top-20">
+                                            <a href="blog-single.html"><img src="images/trending3.jpg" alt=""></a>
+                                        </div>
+                                        <article class="post mar-bottom-20">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">01</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">Takes on Baboon, and It Doesn’t Go Well for It</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+
+                                        <article class="post mar-bottom-20">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">02</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">Zebras Hold New Record for Longest Migration</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+
+                                        <article class="post">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">03</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">African Reserve Got Killed by Lions Instead</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+                                    </div>
+
+                                    <div id="recent" class="tab-pane fade">
+                                        <div class="sidebar-image mar-bottom-20 mar-top-20">
+                                            <a href="blog-single.html"><img src="images/trending4.jpg" alt=""></a>
+                                        </div>
+                                        <article class="post mar-bottom-20">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">01</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">Takes on Baboon, and It Doesn’t Go Well for It</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+
+                                        <article class="post mar-bottom-20">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">02</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">Zebras Hold New Record for Longest Migration</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+
+                                        <article class="post">
+                                            <div class="content display-flex">
+                                                <div class="blog-no">03</div>
+                                                <div class="content-list pad-left-15">
+                                                    <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                                    <h4 class="mar-0"><a href="blog-single.html">African Reserve Got Killed by Lions Instead</a></h4>
+                                                </div>    
+                                            </div>     
+                                            
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-item">
+                            <h3>Recent Videos</h3>
+                            <div class="sidebar-videos about-slider">
+                                <article class="post mar-bottom-20">
+                                    <div class="content-image">
+                                        <a href="blog-single.html"><img src="images/destination1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content-list mar-top-15">
+                                        <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                        <h4 class="mar-0"><a href="blog-single.html">Takes on Baboon, and It Doesn’t Go Well for It</a></h4>
+                                    </div>
+                                    
+                                </article>
+
+                                <article class="post mar-bottom-20">
+                                    <div class="content-image">
+                                        <a href="blog-single.html"><img src="images/destination2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content-list mar-top-15">
+                                        <div class="date mar-bottom-5">Jun 28, 2019</div>
+                                        <h4 class="mar-0"><a href="blog-single.html">Favorite Travel Essentials for a Stylish Summer</a></h4>
+                                    </div>
+                                    
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-item">
+                            <h3>Tags</h3>
+                            <ul class="sidebar-tags">
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Rental</a></li>
+                                <li><a href="#">City</a></li>
+                                <li><a href="#">Yatch</a></li>
+                                <li><a href="#">Activity</a></li>
+                                <li><a href="#">Museum</a></li>
+                                <li><a href="#">Beauty</a></li>
+                                <li><a href="#">Classic</a></li>
+                                <li><a href="#">Creative</a></li>
+                                <li><a href="#">Designs</a></li>
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">Free Style</a></li>
+                                <li><a href="#">Programs</a></li>
+                                <li><a href="#">Travel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog Ends -->
+@section Scripts{
+    @*<script src="~/js/owner/add-basket.js"></script>*@
+    <script src="~/js/owner/layout-basket-count.js"></script>
+    <script>
+        $('a').click(function (e) {
+            $(this).closest('ul').find('li').find('a').removeClass('active');
+            $(this).closest('li').find('a').addClass('active');
+        })
+    </script>
+}

@@ -1,0 +1,927 @@
+﻿@model List<GetProductDto>
+@{
+    ViewData["Title"] = "We Plant - Yaşıl dünyanızı kəşfedin.Təbii bitkilərimiz bağınızı və evinizi bəzəsin";
+    int i = 0;
+}
+
+    <!-- banner starts -->
+    <section class="banner">
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                           <div class="slide-image" style="background-image:url(images/slider/slider4.jpg)"></div>
+                           <div class="swiper-content">
+                                <h1>Make you Free to <span>travel</span> with us</h1>
+                                <p class="mar-bottom-30">Foresee the pain and trouble that are bound to ensue and equal fail in their duty through weakness. </p>
+                                <a href="" class="biz-btn">Explore More</a>
+                                <a href="" class="biz-btn mar-left-10">Contact Us</a>
+                            </div> 
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image:url(images/slider/slider5.jpg)"></div>
+                           <div class="swiper-content">
+                                <h1><span>Sensation Ice Trip</span> Is Coming For Kids</h1>
+                                <p class="mar-bottom-30">Find awesome hotel, tour, car and activities in London</p>
+                                <a href="" class="biz-btn">Find More</a>
+                            </div> 
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                           <div class="slide-image" style="background-image:url(images/slider/slider6.jpg)"></div>
+                           <div class="swiper-content">
+                                <h1>Your <span>Adventure</span> Travel Experts In Europe!</h1>
+                                <p class="mar-bottom-30">Find awesome hotel, tour, car and activities in London</p>
+                                <a href="" class="biz-btn">View More</a>
+                            </div> 
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- banner ends -->
+<!-- attraction starts -->
+<section class="attraction">
+    <div class="container">
+        <div class="section-title">
+            <h2>Top <span>Attraction</span></h2>
+            <p>Grab top tickets with us now so you can relax and kick your feet up later.</p>
+        </div>
+        <div class="why-us-box">
+            <div class="row attract-slider">
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-users"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Family Friendly</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-walking"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Guide Tours</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-hiking"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Self Guides</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-eye"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Sight Seeing</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-air-freshener"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Special Tours</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-map"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Theme Tour</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="attraction-inner text-center">
+                        <div class="attraction-icon">
+                            <a href="#"><i class="fa fa-map-signs"></i></a>
+                        </div>
+                        <div class="attraction-content">
+                            <h5 class="mar-0"><a href="#">Trending Spot</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- attraction ends -->
+
+    <!-- flash-post starts -->
+    <section class="flash-post">
+        <div class="container">
+            <div class="flash-post-main display-flex">
+                <div class="flash-list">
+                    <div class="flash-image">
+                        <img src="images/destination10.jpg" alt="flash-image">
+                    </div>
+                    <div class="flash-content">
+                        <h2 class="white">Moutain trail Guide</h2>
+                        <a href="#" class="biz-btn">See More</a>
+                    </div>
+                </div>
+                <div class="flash-list">
+                    <div class="flash-image">
+                        <img src="images/destination9.jpg" alt="flash-image">
+                    </div>
+                    <div class="flash-content">
+                        <h2 class="white">Best Places in city</h2>
+                        <a href="#" class="biz-btn">See More</a>
+                    </div>
+                </div>
+                <div class="flash-list">
+                    <div class="flash-image">
+                        <img src="images/destination8.jpg" alt="flash-image">
+                    </div>
+                    <div class="flash-content">
+                        <h2 class="white">Perfect Vacation</h2>
+                        <a href="#" class="biz-btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!-- flash-post ends -->
+
+    <!-- why us starts -->
+    <section class="why-us pad-top-70">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Top <span>Services</span></h2>
+                <p class="mar-0">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+
+            <div class="why-us-box">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="why-us-item why-us-item1 text-center">
+                            <div class="why-us-icon ">
+                                <i class="flaticon-price"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h3>Cheap Pricing</h3>
+                                <p class="mar-0">Once a year join us to the other part of the world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="why-us-item why-us-item1 text-center">
+                            <div class="why-us-icon">
+                                <i class="flaticon-add-user"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h3>Easy joining</h3>
+                                <p class="mar-0">Hurry Contact us and in 2 minutes you're booked</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="why-us-item why-us-item1 text-center">
+                            <div class="why-us-icon">
+                                <i class="flaticon-global"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h3>Expert hikers</h3>
+                                <p class="mar-0">Our mountans teached us everything we know</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="why-us-item why-us-item1 text-center">
+                            <div class="why-us-icon">
+                                <i class="flaticon-user"></i>
+                            </div>
+                            <div class="why-us-content">
+                                <h3>Expert team</h3>
+                                <p class="mar-0">We always lived inside our amazing nature for you</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- why us ends -->
+
+    <!-- top destination starts -->
+    <section class="top-destinations destination1 pad-bottom-0">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="white">Popular Destinations</h2>
+                <p class="white">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="content">
+                <div class="row rental-slider">
+                    <div class="col-md-4">
+                        <div class="td-item">
+                            <div class="td-image">
+                                <img src="images/destination4.jpg" alt="image">
+                            </div>
+                            <div class="td-content text-center">
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                               <h3><i class="fa fa-map-marker-alt"></i> Ukraine</h3>
+                               <p class="white">Amet mauris commodo quis. Magna iaculis eu non diam</p>
+                                <a href="#" class="biz-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="td-item">
+                            <div class="td-image">
+                                <img src="images/destination9.jpg" alt="image">
+                            </div>
+                            <div class="td-content text-center">
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                               <h3><i class="fa fa-map-marker-alt"></i> France</h3>
+                               <p class="white">Amet mauris commodo quis. Magna iaculis eu non diam</p>
+                                <a href="#" class="biz-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="td-item">
+                            <div class="td-image">
+                                <img src="images/destination6.jpg" alt="image">
+                            </div>
+                            <div class="td-content text-center">
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                               <h3><i class="fa fa-map-marker-alt"></i> India</h3>
+                                <p class="white">Amet mauris commodo quis. Magna iaculis eu non diam</p>
+                                <a href="#" class="biz-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="td-item">
+                            <div class="td-image">
+                                <img src="images/destination5.jpg" alt="image">
+                            </div>
+                            <div class="td-content text-center">
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                               <h3><i class="fa fa-map-marker-alt"></i> Mexico</h3>
+                               <p class="white">Amet mauris commodo quis. Magna iaculis eu non diam</p>
+                                <a href="#" class="biz-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!-- top destination ends -->
+
+    <!-- Trending Starts -->
+    <section class="trending trending2">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perfect <span>Holiday</span> Plan</h2>
+                <p>Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="trend-box">
+                <div class="row mix tour">
+                    <div class="col-md-4 col-sm-6 col-xs-12 mar-bottom-30">
+                        <div class="trend-item">
+                            <div class="ribbon ribbon-top-left"><span>25% OFF</span></div>
+                            <div class="trend-image">
+                                <img src="images/trending1.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p class="price">From <span>$350.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> United Kingdom</p>
+                                <h4><a href="#">Stonehenge, Windsor Castle, and Bath from London</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="mar-left-5">38 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 mar-bottom-30">
+                        <div class="trend-item">
+                            <div class="trend-image">
+                                <img src="images/trending2.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p>Multi-day Tours</p>
+                                    <p class="price">From <span>$899.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> Germany</p>
+                                <h4><a href="#">Strait and Black Sea Cruise from Istanbul</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                </div>
+                                <span class="mar-left-5">48 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 mar-bottom-30">
+                        <div class="trend-item">
+                            <div class="ribbon ribbon-top-left"><span>Featured</span></div>
+                            <div class="trend-image">
+                                <img src="images/trending3.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p>Attraction Tickets</p>
+                                    <p class="price">From <span>$350.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> Denmark</p>
+                                <h4><a href="#">NYC One World Observatory Skip-the-Line Ticket</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="mar-left-5">32 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="trend-item">
+                            <div class="trend-image">
+                                <img src="images/trending4.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p class="price">From <span>$350.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> Japan</p>
+                                <h4><a href="#">Stonehenge, Windsor Castle, and Bath from London</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                </div>
+                                <span class="mar-left-5">21 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="trend-item">
+                            <div class="ribbon ribbon-top-left"><span>25% OFF</span></div>
+                            <div class="trend-image">
+                                <img src="images/trending5.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p>Multi-day Tours</p>
+                                    <p class="price">From <span>$899.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> Italy</p>
+                                <h4><a href="#">Strait and Black Sea Cruise from Istanbul</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                </div>
+                                <span class="mar-left-5">48 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="trend-item">
+                            <div class="trend-image">
+                                <img src="images/trending6.jpg" alt="image">
+                                <div class="trend-tags">
+                                    <a href="#"><i class="flaticon-like"></i></a>
+                                </div>
+                                <div class="trend-price">
+                                    <p>Attraction Tickets</p>
+                                    <p class="price">From <span>$350.00</span></p>
+                                </div>
+                            </div>
+                            <div class="trend-content">
+                                <p><i class="flaticon-location-pin"></i> Turkey</p>
+                                <h4><a href="#">NYC One World Observatory Skip-the-Line Ticket</a></h4>
+                                <div class="rating mar-bottom-15">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="mar-left-5">18 Reviews</span>
+                                <p class="mar-0"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 night</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!-- Trending Ends -->
+
+    <!-- Call to action starts -->
+    <section class="call-to-action action3">
+        <div class="container">
+            <div class="row display-flex">
+                <div class="col-md-6 col-xs-12">
+                    <div class="action-content">
+                        <h3 class="white package-name">SUMMER SPECIAL</h3>
+                        <h2 class="discounted"><span>25%</span> off</h2>
+                        <h2 class="white">SPEND THE BEST VACTION WITH US <br><span>The nights of Thailand</span></h2>
+                        <a href="#" class="biz-btn">View Details</a>
+                    </div>
+                 </div>   
+                 <div class="col-md-6 col-xs-12">
+                     <div class="video-click">
+                         <div class="video-image">
+                             <img src="images/hometype1.jpg" alt="vide">
+                         </div>
+                         <div class="call-button">
+                            <button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-figure"></div>
+                     </div>
+                 </div>   
+            </div>    
+        </div>
+    </section>
+    <!-- call to action Ends -->
+
+    <!-- top deal starts -->
+    <section class="top-deals">
+        <div class="container">
+            <div class="row display-flex">
+                <div class="col-md-8 col-xs-12">
+                    <div class="section-title title-full width100">
+                        <h2>Today's Top <span>Deals</span></h2>
+                        <p>Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <a href="#" class="biz-btn biz-btn1 pull-right"> Get More Deals</a>
+                </div>
+            </div>
+            <div class="row top-deal-slider">
+                <div class="col-md-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/trending7.jpg" alt="image">
+                    </div>
+                    <div class="slider-content">
+                        <h6 class="mar-bottom-10"><i class="fa fa-map-marker-alt"></i> United Kingdom</h6>
+                        <h4>Earning Asiana Club Miles</h4>
+                        <p>Book Your choice Hotels and Earn Asiana Club</p>
+                        <div class="deal-price">
+                            <p class="price">From <span>$250.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/trending8.jpg" alt="image">
+                    </div>
+                    <div class="slider-content">
+                        <h6 class="mar-bottom-10"><i class="fa fa-map-marker-alt"></i> Thailand</h6>
+                        <h4>Save big on hotels!</h4>
+                        <p>Book and save with Trip.com on your next stay</p>
+                        <div class="deal-price">
+                            <p class="price">From <span>$250.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/trending9.jpg" alt="image">
+                    </div>
+                    <div class="slider-content">
+                        <h6 class="mar-0"><i class="fa fa-map-marker-alt"></i> South Korea</h6>
+                        <h4>Experience Europe Your Way</h4>
+                        <p>With upto 30% Off, experience Europe your way!</p>
+                        <div class="deal-price">
+                            <p class="price">From <span>$250.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/trending10.jpg" alt="image">
+                    </div>
+                    <div class="slider-content">
+                        <h6 class="mar-bottom-10"><i class="fa fa-map-marker-alt"></i> Germany</h6>
+                        <h4>Earning Asiana Club Miles</h4>
+                        <p>Everest Base Camp Trek through 3 High Passes</p>
+                        <div class="deal-price">
+                            <p class="price">From <span>$250.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- top deal ends -->
+
+    <!-- tour agents starts -->
+    <section class="tour-agent tour-agent1">
+        <div class="container">
+            <div class="row display-flex">
+                <div class="col-md-4 col-xs-12">
+                    <div class="section-title title-full width100">
+                        <h2 class="white">THE TREKS OF OUR TEAM</h2>
+                        <p class="white mar-0">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                </div>    
+                <div class="col-md-8 col-xs-12">
+                    <div class="agent-main">
+                        <div class="row team-slider">
+                            <div class="col-md-3">
+                                <div class="agent-list">
+                                    <div class="agent-image">
+                                        <img src="images/inbox5.jpg" alt="agent">
+                                        <div class="agent-content">
+                                            <h3 class="white mar-bottom-5">Salmon Thuir</h3>
+                                            <p class="white mar-0">Tourist Advisor</p>
+                                        </div>
+                                    </div>
+                                    <div class="agent-social">
+                                        <ul class="social-links">
+                                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="agent-list">
+                                    <div class="agent-image">
+                                        <img src="images/inbox6.jpg" alt="agent">
+                                        <div class="agent-content">
+                                            <h3 class="white mar-bottom-5">Salmon Thuir</h3>
+                                            <p class="white mar-0">Tourist Advisor</p>
+                                        </div>
+                                    </div>
+                                    <div class="agent-social">
+                                        <ul class="social-links">
+                                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="agent-list">
+                                    <div class="agent-image">
+                                        <img src="images/inbox7.jpg" alt="agent">
+                                        <div class="agent-content">
+                                            <h3 class="white mar-bottom-5">Salmon Thuir</h3>
+                                            <p class="white mar-0">Tourist Advisor</p>
+                                        </div>
+                                    </div>
+                                    <div class="agent-social">
+                                        <ul class="social-links">
+                                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="agent-list">
+                                    <div class="agent-image">
+                                        <img src="images/inbox8.jpg" alt="agent">
+                                        <div class="agent-content">
+                                            <h3 class="white mar-bottom-5">Salmon Thuir</h3>
+                                            <p class="white mar-0">Tourist Advisor</p>
+                                        </div>
+                                    </div>
+                                    <div class="agent-social">
+                                        <ul class="social-links">
+                                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+    </section>
+    <!-- tour agents Ends -->
+
+    <!-- Reviews starts-->
+    <section class="top-review bg-grey">
+        <div class="container">
+            <div class="row display-flex">
+                <div class="col-md-5 col-xs-12">
+                    <div class="section-title title-full width100">
+                        <h2>Top Tour <span>Reviews</span></h2>
+                        <p class="mar-0">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                </div>
+
+                <div class="col-md-7 col-xs-12">
+                    <div class="row">
+                    <div class="about-slider">
+                        <div class="col-md-4 reviews-list align-center">
+                            <div class="list-rv-detail">
+                                <p class="mar-0"><i class="fa fa-quote-left mar-right-10"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                            </div>
+                            <div class="rev-author mar-top-40">
+                                <div class="rev-image"><img src="images/inbox3.jpg" alt="image"></div>
+                                <div class="rev-content mar-left-20">
+                                    <h4 class="mar-bottom-5">John Doe</h4>
+                                    <p class="mar-bottom-5"> CEO/Mario Brand</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reviews-list align-center">
+                            <div class="list-rv-detail">
+                                <p class="mar-0"><i class="fa fa-quote-left mar-right-10"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                            </div>
+                            <div class="rev-author mar-top-40">
+                                <div class="rev-image"><img src="images/inbox1.jpg" alt="image"></div>
+                                <div class="rev-content mar-left-20">
+                                    <h4 class="mar-bottom-5">Drank Bastis Doe</h4>
+                                    <p class="mar-bottom-5"> COO/Nell & wells Co.</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reviews-list align-center">
+                            <div class="list-rv-detail">
+                                <p class="mar-0"> <i class="fa fa-quote-left mar-right-10"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                            </div>
+                            <div class="rev-author mar-top-40">
+                                <div class="rev-image"><img src="images/inbox2.jpg" alt="image"></div>
+                                <div class="rev-content mar-left-20">
+                                    <h4 class="mar-bottom-5">John Doe</h4>
+                                    <p class="mar-bottom-5"> CEO/Mario Brand</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reviews-list align-center">
+                            <div class="list-rv-detail">
+                                <p class="mar-0"><i class="fa fa-quote-left mar-right-10"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                            </div>
+                            <div class="rev-author mar-top-40">
+                                <div class="rev-image"><img src="images/inbox3.jpg" alt="image"></div>
+                                <div class="rev-content mar-left-20">
+                                    <h4 class="mar-bottom-5">Wayne Nell</h4>
+                                    <p class="mar-bottom-5"> Director/Franchisis Com</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reviews-list align-center">
+                            <div class="list-rv-detail">
+                                <p class="mar-0"><i class="fa fa-quote-left mar-right-10"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                            </div>
+                            <div class="rev-author mar-top-40">
+                                <div class="rev-image"><img src="images/inbox4.jpg" alt="image"></div>
+                                <div class="rev-content mar-left-20">
+                                    <h4 class="mar-bottom-5">Yolksel Doke</h4>
+                                    <p class="mar-bottom-5"> CEO/Rupens Trator </p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+            </div>      
+        </div>        
+    </section>
+    <!-- End Reviews -->
+
+    <!-- partners starts -->
+    <section class="partners">
+        <div class="container">
+            <div class="dest-partner">
+                <div class="row attract-slider">
+                    <div class="col-md-2">
+                        <img src="images/cl-1.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-2.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-3.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-4.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-5.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-2.png" alt="partners">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/cl-3.png" alt="partners">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partners ends -->
+
+    <!-- blog starts -->
+    <section class="blog pad-top-0 mar-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent <span>Activities</span></h2>
+                <p>Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="blog-main">
+                <div class="row">    
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <div class="grid-image">
+                                    <img src="images/trending5.jpg" alt="blog">
+                                </div>
+                                <div class="gridblog-content">
+                                    <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                    <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                    <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <div class="grid-image">
+                                    <img src="images/trending7.jpg" alt="blog">
+                                </div>
+                                <div class="gridblog-content">
+                                    <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                    <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                    <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <div class="grid-image">
+                                    <img src="images/trending3.jpg" alt="blog">
+                                </div>
+                                <div class="gridblog-content">
+                                    <div class="date mar-bottom-15"><i class="flaticon flaticon-calendar"></i> Mar 15, 2017</div>
+                                    <h3><a href="blog-single.html">Raising say express had chiefly detract</a></h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, velit nec luctus dictum Nam finibus.</p>
+                                    <a href="blog-single.html" class="biz-btn biz-btn1">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>    
+            </div>
+        </div>
+    </section>
+    <!-- blog Ends -->
+
+@section Scripts{
+    @*<script src="~/js/owner/add-basket.js"></script>*@
+    <script src="~/js/owner/layout-basket-count.js"></script>
+}
+

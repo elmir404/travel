@@ -1,0 +1,59 @@
+﻿@model AddAboutDto
+
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important;">
+        <!-- Horizontal -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">Add About</h3>
+            </div>
+            <div class="block-content block-content-full">
+                <div class="row">
+                    <div class="col-lg-12 space-y-5">
+                        <!-- Form Horizontal - Default Style -->
+                        <form class="space-y-4" method="POST">
+                            <div>
+                                <p class="field-error"><span asp-validation-for="AzTitle" class="text-danger"></span></p>
+                                <p class="field-error"><span asp-validation-for="AzDescription" class="text-danger"></span></p>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Title</label>
+                                <div class="col-sm-8">
+                                    <input type="text" asp-for="@Model.AzTitle" class="form-control" placeholder="Title..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-4 col-form-label" for="example-hf-email">Description</label>
+                                <div class="col-sm-8">
+                                    <textarea type="text" asp-for="@Model.AzDescription" class="form-control" placeholder="Description.."></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 ms-auto">
+                                    <button type="submit" class="btn btn-primary">Add About</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END Form Horizontal - Default Style -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Horizontal -->
+
+    </div>
+    <!-- END Page Content -->
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <style>
+        .field-error {
+            margin: 0px !important;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    </style>
+}

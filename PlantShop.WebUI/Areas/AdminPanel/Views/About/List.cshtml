@@ -1,0 +1,45 @@
+﻿@model GetAboutDto
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important">
+        <!-- Dynamic Table Responsive -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">
+                    About Table <small>List</small>
+                </h3>
+            </div>
+            <div class="block-content block-content-full">
+                <table id="category-table" class="table table-bordered table-striped table-vcenter js-dataTable-responsive mt-4">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th style="width: 15%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fs-sm">@Model.Id</td>
+                            <td class="fw-semibold fs-sm">@Model.AzTitle</td>
+                            <td>
+                                <div class="btn-list">
+                                    <button onclick=Edit(@Model.Id) type="button" class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Dynamic Table Responsive -->
+    </div>
+    <!-- END Page Content -->
+</main>
+@section Scripts{
+    <script>
+        function Edit(id) {
+            location.href = `/AdminPanel/About/Update?Id=${id}`;
+        }
+    </script>
+      }

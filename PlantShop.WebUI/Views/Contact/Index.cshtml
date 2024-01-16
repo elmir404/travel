@@ -1,0 +1,134 @@
+﻿@model AddContactDto
+@{
+    ViewData["Title"] = "Bizimlə Əlaqə";
+}
+<!-- Breadcrumb -->
+<section class="breadcrumb-outer text-center">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h2 class="white">Contact Us One</h2>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us One</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+<!-- BreadCrumb Ends -->
+<!-- contact starts -->
+<section class="contact-main">
+    <div class="container">
+        <div class="contact-info mar-bottom-30">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <p>445 Mount Eden Road, Mt Edenward land</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <p>977-444-666-888</p>
+                            <p>977-444-222-000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <p>info@Nepayatri.com</p>
+                            <p>help@Nepayatri.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-map">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="map" style="height: 535px; width: 100%;"></div>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact-form1" class="contact-form">
+                        <h3>Keep in Touch</h3>
+                        <div id="contactform-error-msg"></div>
+
+                        <form method="post" action="#" name="contactform" id="contactform">
+                            <div class="form-group">
+                                <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="form-control" id="phnumber" placeholder="Phone">
+                            </div>
+                            <div class="textarea">
+                                <textarea name="comments" placeholder="Enter a message"></textarea>
+                            </div>
+                            <div class="comment-btn text-right mar-top-15">
+                                <input type="submit" class="biz-btn" id="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact Ends -->
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/owner/layout-basket-count.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#phoneBtn").click(function () {
+                debugger;
+                var num = $("#Number").val();
+                $.ajax({
+                    type: "POST",
+                    url: `/Contact/AddPhone?phone=${num}`,
+                    success: function (data) {
+                       debugger;
+                        debugger;
+                        if (data.success) {
+                          debugger;
+                          if(data.message=="send"){
+                                $("#codeInput").show();
+                          }
+                            if (data.message == "confirmed"){
+                                $("#confirmed").show();
+                            }
+
+                        }
+                    },
+                });
+            });
+        });
+    </script>
+    <style>
+        iframe{
+            height: 100%;
+        }
+
+    </style>
+}

@@ -1,0 +1,71 @@
+﻿@model AddClaimDto
+<div class="main-content app-content mt-0">
+    <div class="side-app">
+        <!-- CONTAINER -->
+        <div class="main-container container-fluid">
+            <!-- PAGE-HEADER -->
+            <div class="page-header">
+                <h1 class="page-title">Partner Yenile</h1>
+                <div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a>Yenile</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Yenile</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- PAGE-HEADER END -->
+            <!-- ROW-1 OPEN -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <form method="post" class="card">
+                        <div class="card-header">
+                            <div class="card-title">Partner Yenile</div>
+                        </div>
+                        <div asp-validation-summary="ModelOnly" style="font-style:normal !important" class="text-danger mb-2 "></div>
+                        <div class="card-body">
+                            <div id="updateHome">
+                                <div class="row">
+                                    <label class="col-md-3 form-label mb-4">Role Name :</label>
+                                    <div class="col-md-9 mb-4">
+                                        <select asp-for="@Model.RoleName" name="roleName" id="roleName">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <!--Row-->
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-9">
+                                    <button type="submit" class="btn btn-primary">Yenile</button>
+                                </div>
+                            </div>
+                            <!--End Row-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /ROW-1 CLOSED -->
+        </div>
+        <!-- CONTAINER CLOSED -->
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $.ajax({
+            type: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            url: `/AdminPanel/User/RoleListGet`,
+            success: function (data) {
+                $("#roleName").empty();
+                $.each(
+                    data.data, function (i, value) {
+                        $("#roleName").append(`<option value="${value.name}">${value.name}</option>`)
+                    }
+                )
+            }
+        });
+    </script>
+ }

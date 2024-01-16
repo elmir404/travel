@@ -1,0 +1,156 @@
+﻿@model List<GetOrderDto>
+<main id="main-container">
+    <!-- Page Content -->
+    <div class="content" style="width: 100% !important">
+        <!-- Dynamic Table Responsive -->
+        <div class="block block-rounded">
+            <div class="block-header block-header-default">
+                <h3 class="block-title">
+                    Orders Table <small>List</small>
+                </h3>
+            </div>
+            <div class="block-content block-content-full">
+                <table id="order-table" class="table table-bordered table-striped table-vcenter js-dataTable-responsive mt-4">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Promo</th>
+                            <th>Date</th>
+                            <th>Price</th>
+                            <th>Up Price</th>
+                            <th style="width: 15%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Model)
+                        {
+                            <tr>
+                                <td class="fs-sm">@order.Id</td>
+                                <td class="fw-semibold fs-sm">@order.Name</td>
+                                <td class="fw-semibold fs-sm">@order?.Number?.Phone</td>
+                                <td class="fw-semibold fs-sm">@order.PromoCode</td>
+                                <td class="fw-semibold fs-sm">@order.RegDate</td>
+                                <td class="fw-semibold fs-sm">@order.TotalPrice</td>
+                                <td class="fw-semibold fs-sm">@order.TotalUpPrice</td>
+                                <td>
+                                    <div class="btn-list">
+                                        <button onclick=Edit(@order.Id) type="button" class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i></button>
+                                        <button id="@order.Id" type="button" class="btn removee btn-sm btn-danger">Deactive</button>
+                                        <button onclick=EditStatus(@order.Id) type="button" class="btn btn-sm btn-warning">Status</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Dynamic Table Responsive -->
+    </div>
+    <!-- END Page Content -->
+</main>
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="form34">Order Id</label>
+                    <input type="text" readonly id="orderId">
+                </div>
+
+
+                <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="form34">Status</label>
+                    <select name="statuses" id="statusId">
+                        <option value="1">Gözləmədə</option>
+                        <option value="2">Göndərildi</option>
+                        <option value="3">Tamamlandı</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="updateStatus" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        function EditStatus(id) {
+            $('#orderId').val(id)
+            $('#updateModal').modal('show');
+        }
+        function Edit(id) {
+            location.href = `/AdminPanel/Order/Detail?Id=${id}`;
+        }
+        $("#updateStatus").click(function () {
+            var id=$("#orderId").val();
+            var status=$("#statusId").val();
+            debugger;
+            $.ajax({
+                type: "POST",
+                url: `/AdminPanel/Order/ChageStatus?id=${id}&status=${status}`,
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                complete: function (response) {
+                    location.reload();
+                },
+
+            });
+        });
+        $('#order-table').on('click', '.removee', function () {
+            var table = $('#order-table').DataTable();
+            var id = $(this).attr("id");
+            var thh = $(this);
+
+            Swal.fire({
+                title: 'Are you sure?',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, deactive it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "PUT",
+                        url: `/AdminPanel/Order/Deactive?Id=${id}`,
+                        success: function (result) {
+                            console.log(result)
+                            if (result.success == true) {
+                                Swal.fire(
+                                    'Deactived!',
+                                    'Your file has been deactive.',
+                                    'success'
+                                ).then((result) => {
+                                    if (result.isConfirmed) {
+                                        table
+                                            .row($(thh).parents('tr'))
+                                            .remove()
+                                            .draw(false);
+
+                                    }
+                                });
+
+                            }
+                            else {
+                                alert(result.message)
+                            }
+                        }
+                    });
+
+                }
+            })
+
+
+        });
+    </script>
+      }
