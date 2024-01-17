@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PlantShop.DataAccess.Repositories;
+using PlantShop.DataAccess.Repositories.Abstractions;
 using PlantShop.DataAccess.Repositories.Abstractions.Main;
+using PlantShop.DataAccess.Repositories.Implementations;
 using PlantShop.DataAccess.Repositories.Implementations.Main;
 using PlantShop.DataAccess.UnitOfWorks;
 
@@ -13,7 +15,7 @@ namespace PlantShop.DataAccess
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<IPhoneRepository, PhoneRepository>();
             services.AddScoped<IAboutRepository, AboutRepository>();
             services.AddScoped<IAboutCompanyRepository, AboutCompanyRepository>();

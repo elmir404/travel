@@ -6,6 +6,7 @@ using PlantShop.Business.Services.Abstractions.Users;
 using PlantShop.Business.Services.Implementations.Main;
 using PlantShop.Business.Services.Implementations.Storage;
 using PlantShop.Business.Services.Implementations.Users;
+using Portfolio.Business.Services.Implementations.Main;
 
 namespace PlantShop.Business
 {
@@ -16,16 +17,11 @@ namespace PlantShop.Business
             services.AddScoped<IStorage, FileStorage>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IOrderService, OrderService>();
-            services.AddScoped<IPhoneService, PhoneService>();
-            services.AddScoped<IProductFileService, ProductFileService>();
             services.AddScoped<IAboutService, AboutService>();
             services.AddScoped<IAboutCompanyService, AboutCompanyService>();
             services.AddScoped<IContactService, ContactService>();
-            services.AddScoped<ISliderFileService, SliderFileService>();
-            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IBlogFileService, BlogFileService>();
+            services.AddScoped<IBlogService, BlogService>();
             services.AddAutoMapper(cfg =>
             {
                 cfg.ShouldMapProperty = p => p.GetMethod.IsPublic || p.GetMethod.IsAssembly;

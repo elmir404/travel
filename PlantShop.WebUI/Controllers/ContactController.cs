@@ -8,13 +8,11 @@ namespace PlantShop.WebUI.Controllers
     {
         private readonly IAboutCompanyService _aboutCompanyService;
         private readonly IContactService _contactService;
-        private readonly IPhoneService _phoneService;
 
-        public ContactController(IAboutCompanyService aboutCompanyService, IContactService contactService, IPhoneService phoneService)
+        public ContactController(IAboutCompanyService aboutCompanyService, IContactService contactService)
         {
             _aboutCompanyService = aboutCompanyService;
             _contactService = contactService;
-            _phoneService = phoneService;
         }
 
         public async Task<IActionResult> Index()
@@ -22,12 +20,7 @@ namespace PlantShop.WebUI.Controllers
             
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> AddPhone(string phone)
-        {
-            var result = await _phoneService.AddPhone(phone);
-            return Ok(result);
-        }
+       
 
         [HttpPost]
         public async Task<IActionResult> Index(AddContactDto model)

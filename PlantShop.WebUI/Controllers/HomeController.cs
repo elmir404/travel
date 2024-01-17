@@ -8,31 +8,24 @@ namespace PlantShop.WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IProductService _productService;
-        private readonly IAboutCompanyService _aboutCompanyService;
-        private readonly ISliderService _sliderService;
+        
 
-        public HomeController(IProductService productService, IAboutCompanyService aboutCompanyService, ISliderService sliderService)
+        public HomeController()
         {
-            _productService = productService;
-            _aboutCompanyService = aboutCompanyService;
-            _sliderService = sliderService;
+           
         }
 
         public async Task<IActionResult> Index()
         {
-            var slider = await _sliderService.GetSliders();
-            ViewBag.Sliders = slider.Data;
-
-            var products = await _productService.GetActiveProducts();
-            return View(products.Data);
+           
+            return View();
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAboutCompany()
         {
-            var aboutCompany = await _aboutCompanyService.GetAboutCompany();
-            return Ok(aboutCompany);
+            
+            return Ok();
         }
     }
 }

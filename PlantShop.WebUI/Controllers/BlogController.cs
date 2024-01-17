@@ -8,32 +8,24 @@ namespace PlantShop.WebUI.Controllers
 {
     public class BlogController : Controller
     {
-        private readonly IProductService _productService;
-        private readonly ICategoryService _categoryService;
+        private readonly IBlogService _blogService;
 
-        public BlogController(IProductService productService, ICategoryService categoryService)
+        public BlogController(IBlogService blogService)
         {
-            _productService = productService;
-            _categoryService = categoryService;
+            _blogService = blogService;
         }
 
-        public async Task<IActionResult> Index(SearchModelDto documentSearchModel, int currentPage = 1, int pageSize = 12)
+        public async Task<IActionResult> Index()
         {
-            var categories = await _categoryService.GetActiveCategories();
-            var products = await _productService.SearchProduct(currentPage, pageSize, documentSearchModel);
+            var blog = await _blogService.GetActiveBlogs();
 
-            var viewmodel = new GetSearchDto()
-            {
-                Products = products.Data as SearchResult<IEnumerable<GetProductDto>>,
-                Categories = categories.Data as List<GetCategoryDto>,
-                categoryId = documentSearchModel.categoryIds?.FirstOrDefault(),
-            };
-            return View(viewmodel);
+          
+            return View(blog);
         }
 
         public async Task<IActionResult> Detail(string slug)
         {
-            var result = await _productService.GetProductBySlug(slug);
+            var result = await _blogService.GetBlogBySlug(slug);
             if (result.Success)
                 return View(result.Data);
 

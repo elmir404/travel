@@ -87,8 +87,9 @@ app.UseAuthorization();
 var supportedCultures = new[]
 {
     new CultureInfo("az"),
-    //new CultureInfo("en"),
-    //new CultureInfo("ru")
+    new CultureInfo("en"),
+    new CultureInfo("vi"),
+    new CultureInfo("ja")
 };
 
 app.UseRequestLocalization(new RequestLocalizationOptions
