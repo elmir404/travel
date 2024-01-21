@@ -120,4 +120,25 @@
   <data name="About Us" xml:space="preserve">
     <value>Haqqımızda</value>
   </data>
+  <data name="features-1-description" xml:space="preserve">
+    <value>Xidmət göstərdiyimiz sahəni dərindən araşdırır və analiz edirik</value>
+  </data>
+  <data name="features-1-title" xml:space="preserve">
+    <value>Araşdırma və Analiz</value>
+  </data>
+  <data name="features-2-description" xml:space="preserve">
+    <value>Biz işimizdə ən yaxşısıyıq!Bunu bütün müştərilərimiz təsdiq edir</value>
+  </data>
+  <data name="features-2-title" xml:space="preserve">
+    <value>Müştəri Məmnuniyyəti</value>
+  </data>
+  <data name="features-3-description" xml:space="preserve">
+    <value>İnnovasiya və kreativlik biznesimizin əsasını təşkil edir</value>
+  </data>
+  <data name="features-3-title" xml:space="preserve">
+    <value>Kreativ və İnnovativ Hələr</value>
+  </data>
+  <data name="features-4-description" xml:space="preserve">
+    <value>Xidmət göstərdiyimiz hər sahədə şəffaflığa tam təminat veririk</value>
+  </data>
 </root>

@@ -33,10 +33,7 @@ namespace PlantShop.DataAccess.Context
                 .HasMany(x => x.Orders)
                 .WithOne(c => c.Number)
                 .HasForeignKey(sc => sc.numberId); 
-            modelBuilder.Entity<PhoneNumber>()
-                .HasMany(x => x.Contacts)
-                .WithOne(c => c.Number)
-                .HasForeignKey(sc => sc.numberId);
+          
 
             modelBuilder.Entity<IdentityUserLogin<int>>(b =>
             {

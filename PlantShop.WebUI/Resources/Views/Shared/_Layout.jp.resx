@@ -121,7 +121,7 @@
     <value />
   </data>
   <data name="About" xml:space="preserve">
-    <value>О Нас</value>
+    <value>私たちについて</value>
   </data>
   <data name="Account" xml:space="preserve">
     <value>Счет</value>
@@ -135,6 +135,9 @@
   <data name="Basket" xml:space="preserve">
     <value>Корзина</value>
   </data>
+  <data name="Blog" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
   <data name="Calendar" xml:space="preserve">
     <value>Календарь</value>
   </data>
@@ -142,16 +145,16 @@
     <value>Компании</value>
   </data>
   <data name="Contact" xml:space="preserve">
-    <value>Контакт</value>
+    <value>接触</value>
   </data>
   <data name="ContactUs" xml:space="preserve">
-    <value>Свяжитесь с нами</value>
+    <value>お問い合わせ</value>
   </data>
   <data name="Corporate" xml:space="preserve">
     <value>Корпоративным клиентам</value>
   </data>
   <data name="Crafted" xml:space="preserve">
-    <value>Разработано &lt;a href="https://toogoo.az/"&gt;TooGoo Solutions&lt;/a&gt;</value>
+    <value>&lt;a href="https://tesseract.az/"&gt;Tesseract LLC&lt;/a&gt; によって開発されました</value>
   </data>
   <data name="DiscountCards" xml:space="preserve">
     <value>Дисконтные карты</value>
@@ -160,16 +163,16 @@
     <value>Регионы</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Эл. почта</value>
+    <value>Eメール</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Домашняя страница</value>
+    <value>ホームページ</value>
   </data>
   <data name="HowItWorks" xml:space="preserve">
     <value>Как это работает?</value>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>Информация</value>
+    <value>情報</value>
   </data>
   <data name="Language1" xml:space="preserve">
     <value>Аз</value>
@@ -190,10 +193,10 @@
     <value>Заказы</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Телефон</value>
+    <value>電話</value>
   </data>
   <data name="QuickLink" xml:space="preserve">
-    <value>Прямая Cсылка</value>
+    <value>クイックリンク</value>
   </data>
   <data name="Refund" xml:space="preserve">
     <value>Возврат платежа</value>
@@ -206,6 +209,9 @@
   </data>
   <data name="Security" xml:space="preserve">
     <value>Безопасность</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>サービス</value>
   </data>
   <data name="SignUp" xml:space="preserve">
     <value>Регистр</value>
@@ -221,5 +227,8 @@
   </data>
   <data name="Terms" xml:space="preserve">
     <value>Условия и положения</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>さくらトラベル</value>
   </data>
 </root>

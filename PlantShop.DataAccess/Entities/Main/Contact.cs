@@ -6,10 +6,9 @@ namespace PlantShop.DataAccess.Entities.Main
 {
     public class Contact : EntityBase, IEntity
     {
-        public string Name { get; set; }
-        public string Subject { get; set; } 
-        public string Message { get; set; }
-        public int? numberId { get; set; }
-        public PhoneNumber? Number { get; set; } 
-    }
+		public string Name { get; set; }
+		public string Number { get; set; }
+		public string Email { get; set; }
+		public string Message { get; set; }
+	}
 }

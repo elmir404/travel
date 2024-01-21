@@ -1,134 +1,106 @@
 ﻿@model AddContactDto
+@inject IViewLocalizer Localizer
 @{
     ViewData["Title"] = "Bizimlə Əlaqə";
 }
-<!-- Breadcrumb -->
-<section class="breadcrumb-outer text-center">
-    <div class="container">
-        <div class="breadcrumb-content">
-            <h2 class="white">Contact Us One</h2>
-            <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact Us One</li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="overlay"></div>
+<!--Mobile contact-->
+<!--End Header -->
+<!--Breadcrumb Area-->
+<section class="breadcrumb-area banner-6">
+	<div class="text-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 v-center">
+					<div class="bread-inner">
+						<div class="bread-menu wow fadeInUp" data-wow-delay=".2s">
+							<ul>
+								<li><a asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
+								<li><a asp-controller="Contact" asp-action="Index">@Localizer["Contact"]</a></li>
+							</ul>
+						</div>
+						<div class="bread-title wow fadeInUp" data-wow-delay=".5s">
+							<h2>@Localizer["Contact"]</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- BreadCrumb Ends -->
-<!-- contact starts -->
-<section class="contact-main">
-    <div class="container">
-        <div class="contact-info mar-bottom-30">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fa fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <p>445 Mount Eden Road, Mt Edenward land</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="info-content">
-                            <p>977-444-666-888</p>
-                            <p>977-444-222-000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <p>info@Nepayatri.com</p>
-                            <p>help@Nepayatri.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact-map">
-            <div class="row">
-                <div class="col-md-6">
-                    <div id="map" style="height: 535px; width: 100%;"></div>
-                </div>
-                <div class="col-md-6">
-                    <div id="contact-form1" class="contact-form">
-                        <h3>Keep in Touch</h3>
-                        <div id="contactform-error-msg"></div>
-
-                        <form method="post" action="#" name="contactform" id="contactform">
-                            <div class="form-group">
-                                <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="phone" class="form-control" id="phnumber" placeholder="Phone">
-                            </div>
-                            <div class="textarea">
-                                <textarea name="comments" placeholder="Enter a message"></textarea>
-                            </div>
-                            <div class="comment-btn text-right mar-top-15">
-                                <input type="submit" class="biz-btn" id="submit" value="Send Message">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--End Breadcrumb Area-->
+<!--Start Enquire Form-->
+<section class="contact-page pad-tb">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 v-center">
+				<div class="common-heading text-l">
+					<span>@Localizer["Title"]</span>
+					<h2 class="mt0 mb0">@Localizer["Header"]</h2>
+					<p class="mb60 mt20">@Localizer["Description"]</p>
+				</div>
+				<div class="form-block">
+					<form id="contactForm" method="post" data-bs-toggle="validator" class="shake">
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<input type="text" asp-for="Name" placeholder="@Localizer["YourName"]" required data-error="Please fill Out">
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group col-sm-6">
+								<input type="email" asp-for="Email" placeholder="YourEmail" required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-12">
+								<input type="text" asp-for="Number" placeholder="@Localizer["YourPhone"]" required data-error="Please fill Out">
+								<div class="help-block with-errors"></div>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<textarea asp-for="Message" rows="5" placeholder="@Localizer["YourMessage"]" required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">@Localizer["Send"] <span class="circle"></span></button>
+						<div id="msgSubmit" class="h3 text-center hidden"></div>
+						<div class="clearfix"></div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-5 v-center">
+				<div class="contact-details">
+					<div class="contact-card wow fadeIn" data-wow-delay=".2s">
+						<div class="info-card v-center">
+							<span><i class="fas fa-phone-alt"></i> @Localizer["Phone"]:</span>
+							<div class="info-body">
+								<p>Assistance hours: Monday – Friday, 9 am to 5 pm</p>
+								<a href="tel:+10000000000">(+91) 0000 000 000</a>
+							</div>
+						</div>
+					</div>
+					<div class="email-card mt30 wow fadeIn" data-wow-delay=".5s">
+						<div class="info-card v-center">
+							<span><i class="fas fa-envelope"></i> @Localizer["Email"]:</span>
+							<div class="info-body">
+								<p>Our support team will get back to in 24-h during standard business hours.</p>
+								<a href="mailto:info@businessname.com">info@businessname.com</a>
+							</div>
+						</div>
+					</div>
+					<div class="skype-card mt30 wow fadeIn" data-wow-delay=".9s">
+						<div class="info-card v-center">
+							<span><i class="fab fa-skype"></i> Skype:</span>
+							<div class="info-body">
+								<p>We Are Online: Monday – Friday, 9 am to 5 pm</p>
+								<a href="skype:niwax.company?call">niwax.company</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- contact Ends -->
 
-@section Scripts{
-    <partial name="_ValidationScriptsPartial" />
-    <script src="~/js/owner/layout-basket-count.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#phoneBtn").click(function () {
-                debugger;
-                var num = $("#Number").val();
-                $.ajax({
-                    type: "POST",
-                    url: `/Contact/AddPhone?phone=${num}`,
-                    success: function (data) {
-                       debugger;
-                        debugger;
-                        if (data.success) {
-                          debugger;
-                          if(data.message=="send"){
-                                $("#codeInput").show();
-                          }
-                            if (data.message == "confirmed"){
-                                $("#confirmed").show();
-                            }
 
-                        }
-                    },
-                });
-            });
-        });
-    </script>
-    <style>
-        iframe{
-            height: 100%;
-        }
 
-    </style>
-}

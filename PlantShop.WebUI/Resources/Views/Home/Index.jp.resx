@@ -121,7 +121,7 @@
     <value>Контакт</value>
   </data>
   <data name="faq-1" xml:space="preserve">
-    <value>Как Это Работает?</value>
+    <value>成功のために協力する</value>
   </data>
   <data name="faq-1-desc" xml:space="preserve">
     <value>Наша платформа создана для того, чтобы интересно передать ваше поздравление или послание вашим близким.</value>
@@ -163,43 +163,43 @@
     <value>У вас есть другие вопросы?</value>
   </data>
   <data name="faq-title" xml:space="preserve">
-    <value>Часто Задаваемые Вопросы</value>
+    <value>私たちはクリエイティブエージェンシーです</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
-    <value>Слова из сердца, ваши поздравления</value>
+    <value>サービスを提供する分野を徹底的に調査および分析します</value>
   </data>
   <data name="features-1-title" xml:space="preserve">
-    <value>Сообщения</value>
+    <value>調査と分析</value>
   </data>
   <data name="features-2-description" xml:space="preserve">
-    <value>Передайте свои добрые слова своим голосом</value>
+    <value>私たちはビジネスにおいて最高です! これはすべてのお客様によって証明されています</value>
   </data>
   <data name="features-2-title" xml:space="preserve">
-    <value>Голосовое сообщение</value>
+    <value>顧客満足</value>
   </data>
   <data name="features-3-description" xml:space="preserve">
-    <value>Запишите свое видео. Отправьте незабываемый подарок своим близким через нас</value>
+    <value>革新と創造性が当社のビジネスの中核です</value>
   </data>
   <data name="features-3-title" xml:space="preserve">
-    <value>Видеосообщение</value>
+    <value>創造的かつ革新的な静止画</value>
   </data>
   <data name="features-4-description" xml:space="preserve">
-    <value />
+    <value>私たちはサービスを提供するあらゆる分野において完全な透明性を提供します</value>
   </data>
   <data name="features-4-title" xml:space="preserve">
-    <value />
+    <value>正直さと透明性</value>
   </data>
   <data name="features-title" xml:space="preserve">
     <value>Все электронные сообщения в одном месте</value>
   </data>
   <data name="header-button" xml:space="preserve">
-    <value>Начните прямо сейчас</value>
+    <value>始めましょう</value>
   </data>
   <data name="header-description" xml:space="preserve">
-    <value>Пусть через нас достигнут ваши теплые слова до ваших близких, покажите им свою любовь и заботу</value>
+    <value>私たちは、教育から旅行に至るまで、あらゆる段階でお客様とともにあり、あらゆる分野で質の高いサービスを提供します。</value>
   </data>
   <data name="header-title" xml:space="preserve">
-    <value>Радуйте своих близких неожиданными сюрпризами</value>
+    <value>高品質かつ手頃な価格のソリューションを作成します</value>
   </data>
   <data name="help-description" xml:space="preserve">
     <value>Интересно, как работает наша платформа? Тогда смотрите наше видео, следуйте простым шагам, чтобы отправить свою первую открытку.</value>

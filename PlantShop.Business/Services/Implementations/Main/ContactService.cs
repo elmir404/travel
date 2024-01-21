@@ -30,29 +30,7 @@ namespace PlantShop.Business.Services.Implementations.Main
            var phone=await _phoneRepository.GetPhoneByNumber(contact.Number);
             if (phone != null)
             {
-                var time = DateTime.Now - phone.ActiveDate;
-                var day = time.Days;
-                if (phone.IsConfirmed==true && day<10)
-                {
-                    
-                    var request = new Contact {Message = contact.Message, Number = phone, Subject = contact.Subject, Name = contact.Name};
-                    await _unitOfWork.Repository<Contact>().AddAsync(request);
-                    _unitOfWork.Commit();
-                    return new ServiceResult(true, request);
-                }
-                if(phone.Code==contact.Code)
-                {
-                    var request = new Contact { Message = contact.Message, Number = phone, Subject = contact.Subject, Name = contact.Name };
-                    phone.IsConfirmed = true;
-                    phone.ActiveDate = DateTime.Now;
-                    await _unitOfWork.Repository<Contact>().AddAsync(request);
-                    _unitOfWork.Commit();
-                    return new ServiceResult(true, request);
-                }
-                else
-                {
-                    return new ServiceResult(false, "code");
-                }
+               
                
             }
             return new ServiceResult(false, "error");

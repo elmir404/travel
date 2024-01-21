@@ -151,7 +151,7 @@
     <value>Korporativ Müştərilər Üçün</value>
   </data>
   <data name="Crafted" xml:space="preserve">
-    <value>&lt;a href="https://toogoo.az/"&gt;TooGoo Solutions&lt;/a&gt; tərəfindən hazırlandı.</value>
+    <value>&lt;a href="https://tesseract.az/"&gt;Tesseract LLC&lt;/a&gt; tərəfindən hazırlandı.</value>
   </data>
   <data name="DiscountCards" xml:space="preserve">
     <value>Endrim Kartları</value>
@@ -178,7 +178,7 @@
     <value>En</value>
   </data>
   <data name="Language3" xml:space="preserve">
-    <value>Ru</value>
+    <value />
   </data>
   <data name="Login" xml:space="preserve">
     <value>Giriş</value>
@@ -204,11 +204,17 @@
   <data name="Register" xml:space="preserve">
     <value>Qeydiyyat</value>
   </data>
+  <data name="s" xml:space="preserve">
+    <value />
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Axtar</value>
   </data>
   <data name="Security" xml:space="preserve">
     <value>Təhlükəsizlik</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Xidmətlərimiz</value>
   </data>
   <data name="SignUp" xml:space="preserve">
     <value>Qeydiyyat</value>
@@ -224,5 +230,8 @@
   </data>
   <data name="Terms" xml:space="preserve">
     <value>Şərtlər və qaydalar</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>Sakura Travel</value>
   </data>
 </root>

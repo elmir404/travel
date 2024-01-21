@@ -1,272 +1,116 @@
 ﻿@model List<GetProductDto>
+@inject IViewLocalizer Localizer
 @{
     ViewData["Title"] = "We Plant - Yaşıl dünyanızı kəşfedin.Təbii bitkilərimiz bağınızı və evinizi bəzəsin";
     int i = 0;
 }
 
-    <!-- banner starts -->
-    <section class="banner">
-        <div class="slider">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide-inner">
-                           <div class="slide-image" style="background-image:url(images/slider/jpn1.webp)"></div>
-                           <div class="swiper-content">
-                                <h1>Make you Free to <span>travel</span> with us</h1>
-                                <p class="mar-bottom-30">Foresee the pain and trouble that are bound to ensue and equal fail in their duty through weakness. </p>
-                                <a href="" class="biz-btn">Explore More</a>
-                                <a href="" class="biz-btn mar-left-10">Contact Us</a>
-                            </div> 
-                            <div class="overlay"></div>
-                        </div> 
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-inner">
-                            <div class="slide-image" style="background-image:url(images/slider/jpn2.webp)"></div>
-                           <div class="swiper-content">
-                                <h1><span>Sensation Ice Trip</span> Is Coming For Kids</h1>
-                                <p class="mar-bottom-30">Find awesome hotel, tour, car and activities in London</p>
-                                <a href="" class="biz-btn">Find More</a>
-                            </div> 
-                            <div class="overlay"></div>
-                        </div> 
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-inner">
-                           <div class="slide-image" style="background-image:url(images/slider/vi1.webp)"></div>
-                           <div class="swiper-content">
-                                <h1>Your <span>Adventure</span> Travel Experts In Europe!</h1>
-                                <p class="mar-bottom-30">Find awesome hotel, tour, car and activities in London</p>
-                                <a href="" class="biz-btn">View More</a>
-                            </div> 
-                            <div class="overlay"></div>
-                        </div> 
-                    </div>
-                <div class="swiper-slide">
-                    <div class="slide-inner">
-                        <div class="slide-image" style="background-image:url(images/slider/vi2.webp)"></div>
-                        <div class="swiper-content">
-                            <h1>Your <span>Adventure</span> Travel Experts In Europe!</h1>
-                            <p class="mar-bottom-30">Find awesome hotel, tour, car and activities in London</p>
-                            <a href="" class="biz-btn">View More</a>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- banner ends -->
-
-<!-- attraction starts -->
-<section class="attraction">
-    <div class="container">
-        <div class="section-title">
-            <h2>Top <span>Attraction</span></h2>
-            <p>Grab top tickets with us now so you can relax and kick your feet up later.</p>
-        </div>
-        <div class="why-us-box">
-            <div class="row attract-slider">
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-users"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Family Friendly</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-walking"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Guide Tours</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-hiking"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Self Guides</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-eye"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Sight Seeing</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-air-freshener"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Special Tours</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-map"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Theme Tour</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="attraction-inner text-center">
-                        <div class="attraction-icon">
-                            <a href="#"><i class="fa fa-map-signs"></i></a>
-                        </div>
-                        <div class="attraction-content">
-                            <h5 class="mar-0"><a href="#">Trending Spot</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--Start Hero-->
+<section class="hero-section business-startup">
+	<div class="text-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 v-center">
+					<div class="header-heading">
+						<h1 class="wow fadeInUp" data-wow-delay=".2s">@Localizer["header-title"]</h1>
+						<p class="wow fadeInUp" data-wow-delay=".4s">@Localizer["header-description"]</p>
+						<a asp-controller="Contact" asp-action="Index" class="btn-main bg-btn1 lnk wow fadeInUp" data-wow-delay=".6s">@Localizer["header-button"]<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+					</div>
+				</div>
+				<div class="col-lg-6 v-center">
+					<div class="hero-photo"><img src="~/images/hero/leads-hero (1).png" alt="img"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- attraction ends -->
-<!-- why us about starts -->
-<section class="why-us pad-top-80 bg-grey">
-    <div class="container">
-        <div class="why-us-about">
-            <div class="row display-flex">
-                <div class="col-md-6 col-xs-12">
-                    <div class="why-about-inner">
-                        <h4>Amazing Places To Enjony Your Travel</h4>
-                        <h2>We Provide <span>Best Services</span></h2>
-                        <p class="mar-bottom-25">Aliquam erat volutpat. Curabitur tempor nibh quis arcu convallis, sed viverra quam sollicitudin. Proin sed augue sed neque ultricies condimentum. In ac ultrices lectus.<br> Nullam ex elit, vestibulum ut urna non, tincidunt condimentum sem. Sed enim tortor, accumsan at consequat et, tempus sit ame</p>
-                        <a href="#" class="biz-btn biz-btn1">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="why-about-image">
-                                <img src="~/images/banner1.webp" alt="about">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="why-about-image">
-                                <img src="~/images/banner2.webp" alt="about">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--End Hero-->
+<!--Start Service-->
+<section class="dg-service2 pb120 pt0 ">
+	<div class="container">
+		
+		<div class="row upset">
+			<div class="col-lg-3 col-sm-6 mt30">
+				<div class="s-block up-hor">
+					<div class="s-card-icon"><img src="~/images/icons/research.svg" alt="service" class="img-fluid" /></div>
+					<h4>@Localizer["features-1-title"]</h4>
+					<p>@Localizer["features-1-description"]</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt30">
+				<div class="s-block up-hor">
+					<div class="s-card-icon"><img src="~/images/icons/chat.svg" alt="service" class="img-fluid" /></div>
+					<h4>@Localizer["features-2-title"]</h4>
+					<p>@Localizer["features-2-description"]</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt30">
+				<div class="s-block up-hor">
+					<div class="s-card-icon"><img src="~/images/icons/monitor.svg" alt="service" class="img-fluid" /></div>
+					<h4>@Localizer["features-3-title"]</h4>
+					<p>@Localizer["features-3-description"]</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt30">
+				<div class="s-block up-hor">
+					<div class="s-card-icon"><img src="~/images/icons/trasparency.svg" alt="service" class="img-fluid" /></div>
+					<h4>@Localizer["features-4-title"]</h4>
+					<p>@Localizer["features-4-description"]</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- why us about ends -->
-   
-
-    <!-- why us starts -->
-    <section class="why-us pad-top-70">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Top <span>Services</span></h2>
-                <p class="mar-0">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
-
-            <div class="why-us-box">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon ">
-                                <i class="flaticon-price"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Cheap Pricing</h3>
-                                <p class="mar-0">Once a year join us to the other part of the world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-add-user"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Easy joining</h3>
-                                <p class="mar-0">Hurry Contact us and in 2 minutes you're booked</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-global"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Expert hikers</h3>
-                                <p class="mar-0">Our mountans teached us everything we know</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-user"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Expert team</h3>
-                                <p class="mar-0">We always lived inside our amazing nature for you</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- why us ends -->
-<!-- Discount action starts -->
-<section class="discount-action pad-top-0">
-    <div class="container">
-        <div class="call-banner">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="call-banner-inner text-center">
-                        <h2>SUMMER SPECIAL <br>UPTO 25% OFF</h2>
-                        <h3 class="mar-bottom-20">SPEND THE BEST VACTION WITH US <br>The nights of Thailand</h3>
-                        <a href="#" class="biz-btn biz-btn1">View Details</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12"></div>
-            </div>
-        </div>
-    </div>
+<!--End Service-->
+<section class="about-dg-busign pb120 pt120 bg-light-ylo upset">
+	<div class="up-curvs">
+		<svg height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 1920 89.3" style="enable-background:new 0 0 1920 89.3;" xml:space="preserve" fill="#e9f5ff">
+<path d="M1919.5,89.5H-0.5c0,0,0-90,0-90c114.9,4.8,228.6,17.9,343.6,24.6c118.6,7,237.4,11.9,356.1,14.7
+c237.6,5.7,475.3,3.1,712.7-7.7c164.2-7.5,328.1-23.7,492.3-31c0.7,0,15.2-0.5,15.2-0.6C1919.5-0.5,1919.5,89.5,1919.5,89.5z" />
+</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 v-center">
+				<div class="common-heading-2 text-l">
+					<span class="text-effect-1">We Are Creative Agency</span>
+					<h2 class="mb20">Work Together For Success</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+				</div>
+			</div>
+			<div class="col-lg-6 v-center">
+				<img src="~/images/about/marketing-service.png" alt="img" class="img-fluid">
+			</div>
+			<div class="col-lg-6 v-center mt40 order2">
+				<img src="~/images/about/lead-pic.png" alt="img" class="img-fluid">
+			</div>
+			<div class="col-lg-6 v-center mt40 order1">
+				<div class="common-heading-2 text-l">
+					<span class="text-effect-1">We Are Creative Agency</span>
+					<h2 class="mb20">We Craft Beautiful Digital Experiences</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-curvs">
+		<svg height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 1920 89.3" style="enable-background:new 0 0 1920 89.3;" xml:space="preserve" fill="#e9f5ff">
+<path d="M1919.5-0.5H-0.5c0,0,0,90,0,90c114.9-4.8,228.6-17.9,343.6-24.6c118.6-7,237.4-11.9,356.1-14.7
+c237.6-5.7,475.3-3.1,712.7,7.7c164.2,7.5,328.1,23.7,492.3,31c0.7,0,15.2,0.5,15.2,0.6C1919.5,89.5,1919.5-0.5,1919.5-0.5z" />
+</svg>
+	</div>
 </section>
-<!-- Discount action Ends -->
+@await Component.InvokeAsync("Services")
+@await Component.InvokeAsync("Blog")
+
+
+
 
     
 
   
 
-@section Scripts{
-    @*<script src="~/js/owner/add-basket.js"></script>*@
-}
+
 

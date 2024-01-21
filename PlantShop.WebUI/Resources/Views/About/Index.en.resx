@@ -120,4 +120,31 @@
   <data name="bouqet" xml:space="preserve">
     <value>Buketlər</value>
   </data>
+  <data name="features-1-description" xml:space="preserve">
+    <value>We deeply research and analyze the area we provide services</value>
+  </data>
+  <data name="features-1-title" xml:space="preserve">
+    <value>Research and Analysis</value>
+  </data>
+  <data name="features-2-description" xml:space="preserve">
+    <value>We are the best in our business! This is confirmed by all our customers</value>
+  </data>
+  <data name="features-2-title" xml:space="preserve">
+    <value>Customer Satisfaction</value>
+  </data>
+  <data name="features-3-description" xml:space="preserve">
+    <value>Innovation and creativity are at the core of our business</value>
+  </data>
+  <data name="features-3-title" xml:space="preserve">
+    <value>Creative and innovative solutions</value>
+  </data>
+  <data name="features-4-description" xml:space="preserve">
+    <value>We provide full transparency in every area we provide services</value>
+  </data>
+  <data name="features-4-title" xml:space="preserve">
+    <value>Honesty and Transparency</value>
+  </data>
+  <data name="features-title" xml:space="preserve">
+    <value>All Electronic Messages in One Place</value>
+  </data>
 </root>

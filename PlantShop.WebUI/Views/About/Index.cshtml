@@ -1,386 +1,97 @@
 ﻿@model GetAboutDto
+
 @{
     ViewData["Title"] = "Haqqımızda Ətraflı";
 }
-    <!-- header ends -->
-
-    <!-- Breadcrumb -->
-    <section class="breadcrumb-outer text-center">
+<section class="breadcrumb-area banner-1" data-background="~/images/banner/9.jpg">
+    <div class="text-block">
         <div class="container">
-            <div class="breadcrumb-content">
-                <h2 class="white">About Us 2</h2>
-                <nav aria-label="breadcrumb">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us 2</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-    <!-- BreadCrumb Ends -->
-
-    <!-- why us starts -->
-    <section class="why-us pad-top-80">
-        <div class="container">
-            <div class="why-us-about mar-bottom-60">
-                <div class="row display-flex">
-                    <div class="col-md-6 col-xs-12">
-                        <div class="why-about-inner">
-                            <h4>Amazing Places To Enjony Your Travel</h4>
-                            <h2>About Our Super Travel</h2>
-                            <p>Aliquam erat volutpat. Curabitur tempor nibh quis arcu convallis, sed viverra quam sollicitudin. Proin sed augue sed neque ultricies condimentum. In ac ultrices lectus.<br> Nullam ex elit, vestibulum ut urna non, tincidunt condimentum sem. Sed enim tortor, accumsan at consequat et, tempus sit ame</p>
-                            <a href="#" class="biz-btn biz-btn1">Read More</a>
+            <div class="row">
+                <div class="col-lg-12 v-center">
+                    <div class="bread-inner">
+                        <div class="bread-menu">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="About" asp-action="Index">About Us</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="why-about-image">
-                            <img src="images/hometype1.jpg" alt="about">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="why-us-box">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="why-us-item display-flex">
-                            <div class="why-us-icon">
-                                <i class="flaticon-price"></i>
-                            </div>
-                            <div class="why-us-content mar-left-20">
-                                <h3 class="mar-bottom-10">Competetive Pricing</h3>
-                                <p class="mar-0">With 500+ suppliers and the purchasing power of 300 million members</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4  col-xs-12">
-                        <div class="why-us-item display-flex">
-                            <div class="why-us-icon">
-                                <i class="flaticon-quality"></i>
-                            </div>
-                            <div class="why-us-content mar-left-20">
-                                <h3 class="mar-bottom-10">Award Winning Service</h3>
-                                <p class="mar-0">Travel worry free knowing that here present we're here if you need us, 24 hours a day</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4  col-xs-12">
-                        <div class="why-us-item display-flex">
-                            <div class="why-us-icon">
-                                <i class="flaticon-global"></i>
-                            </div>
-                            <div class="why-us-content mar-left-20">
-                                <h3 class="mar-bottom-10">Worldwide Coverage</h3>
-                                <p class="mar-0">1,200,000 hotels in more than 200 countries and regions & flights to over 5,000 citites.</p>
-                            </div>
+                        <div class="bread-title">
+                            <h2>About Company</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- why us ends -->
-
-    <!-- why us starts -->
-    <section class="why-us pad-top-70 bg-grey">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Top <span>Services</span></h2>
-                <p class="mar-0">Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
-
-            <div class="why-us-box">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon ">
-                                <i class="flaticon-price"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Reliable Pricing</h3>
-                                <p class="mar-0">Once a year join us to the other part of the world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-add-user"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Easy joining</h3>
-                                <p class="mar-0">Contact us and in 2 minutes you're booked</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-global"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Expert hikers</h3>
-                                <p class="mar-0">Our mountans teached us everything we know</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="why-us-item why-us-item1 text-center">
-                            <div class="why-us-icon">
-                                <i class="flaticon-user"></i>
-                            </div>
-                            <div class="why-us-content">
-                                <h3>Experienced team</h3>
-                                <p class="mar-0">We always lived inside our amazing nature</p>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+</section>
+<!--End Breadcrumb Area-->
+<!--Start About-->
+<section class="about-agency pad-tb block-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 v-center">
+                <div class="about-image">
+                    <img src="images/about/company-about.png" alt="about us" class="img-fluid" />
                 </div>
             </div>
-
-        </div>
-    </section>
-    <!-- why us ends -->
-
-    <!-- Call to action starts -->
-    <section class="call-to-action">
-        <div class="container">
-            <div class="row display-flex">
-                <div class="col-md-6 col-xs-12">
-                    <div class="action-content">
-                        <h3 class="white package-name">SUMMER SPCIAL</h3>
-                        <h2 class="discounted"><span>25%</span> off</h2>
-                        <h2 class="white">SPEND THE BEST VACTION WITH US <br><span>The nights of Thailand</span></h2>
-                        <p class="mar-bottom-20">4days / 5nights</p>
-                        <a href="#" class="biz-btn">View Details</a>
-                    </div>
-                 </div>   
-                 <div class="col-md-6 col-xs-12">
-                     <div class="video-click">
-                         <div class="video-image">
-                             <img src="images/hometype1.jpg" alt="vide">
-                         </div>
-                         <div class="call-button">
-                            <button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">
-                                <i class="fa fa-play"></i>
-                            </button>
-                        </div>
-                        <div class="video-figure"></div>
-                     </div>
-                 </div>   
-            </div>    
-        </div>
-    </section>
-    <!-- call to action Ends -->
-
-    <!-- tour agents starts -->
-    <section class="tour-agent">
-        <div class="container">
-            <div class="section-title">
-                <h2>Travel <span>Agents</span></h2>
-                <p>Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="col-lg-6">
+                <div class="common-heading text-l ">
+                    <span>About Us</span>
+                    <h2>About Agency</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+               
             </div>
-            <div class="agent-main">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="agent-list">
-                            <div class="agent-image">
-                                <img src="images/inbox5.jpg" alt="agent">
-                                <div class="agent-content">
-                                    <h3 class="white mar-bottom-5">Salmon Thuir</h3>
-                                    <p class="white mar-0">Tourist Advisor</p>
-                                </div>
-                            </div>
-                            <div class="agent-social">
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="agent-list">
-                            <div class="agent-image">
-                                <img src="images/inbox6.jpg" alt="agent">
-                                <div class="agent-content">
-                                    <h3 class="white mar-bottom-5">Salmon Thuir</h3>
-                                    <p class="white mar-0">Tourist Advisor</p>
-                                </div>
-                            </div>
-                            <div class="agent-social">
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="agent-list">
-                            <div class="agent-image">
-                                <img src="images/inbox7.jpg" alt="agent">
-                                <div class="agent-content">
-                                    <h3 class="white mar-bottom-5">Salmon Thuir</h3>
-                                    <p class="white mar-0">Tourist Advisor</p>
-                                </div>
-                            </div>
-                            <div class="agent-social">
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="agent-list">
-                            <div class="agent-image">
-                                <img src="images/inbox8.jpg" alt="agent">
-                                <div class="agent-content">
-                                    <h3 class="white mar-bottom-5">Salmon Thuir</h3>
-                                    <p class="white mar-0">Tourist Advisor</p>
-                                </div>
-                            </div>
-                            <div class="agent-social">
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </div>
+</section>
+<!--End About-->
+<!--Start why-choose-->
+<section class="why-choose pad-tb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="common-heading">
+                    <span>We Are Awesome</span>
+                    <h2 class="mb30">Why Choose Us</h2>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- tour agents Ends -->
-
-    <!-- Reviews starts-->
-    <section class="home-testimonial bg-grey">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Happy Costumers</h2>
-                <p>Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <div class="row upset">
+            <div class="col-lg-3 col-sm-6 mt30">
+                <div class="s-block up-hor">
+                    <div class="s-card-icon"><img src="~/images/icons/research.svg" alt="service" class="img-fluid" /></div>
+                    <h4>Reasearch and Analysis</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
             </div>
-            <div class="row testimonial-slider">
-                <div class="ts-item col-md-4">
-                    <div class="ts-image">
-                        <img src="images/inbox1.jpg" alt="image">
-                    </div>
-                    <div class="ts-content">
-                        <h4 class="mar-bottom-5">John Doe</h4>
-                        <p class="mar-bottom-5"> CEO/Mario Brand</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <p class="content mar-0">This is the third time I've used Travelo Website and telling you the truth their services are always reliable and it ony takes few minutes to plan and finalize.</p>
-                        <div class="ts-icon">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-sm-6 mt30">
+                <div class="s-block up-hor">
+                    <div class="s-card-icon"><img src="~/images/icons/chat.svg" alt="service" class="img-fluid" /></div>
+                    <h4>Negotiation and power</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="ts-item col-md-4">
-                    <div class="ts-image">
-                        <img src="images/inbox4.jpg" alt="image">
-                    </div>
-                    <div class="ts-content">
-                        <h4 class="mar-bottom-5">John Doe</h4>
-                        <p class="mar-bottom-5"> CEO/Mario Brand</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <p class="content mar-0">This is the third time I've used Travelo Website and telling you the truth their services are always reliable and it ony takes few minutes to plan and finalize.</p>
-                        <div class="ts-icon">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt30">
+                <div class="s-block up-hor">
+                    <div class="s-card-icon"><img src="~/images/icons/monitor.svg" alt="service" class="img-fluid" /></div>
+                    <h4>Creative and innovative solutions</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="ts-item col-md-4">
-                    <div class="ts-image">
-                        <img src="images/inbox3.jpg" alt="image">
-                    </div>
-                    <div class="ts-content">
-                        <h4 class="mar-bottom-5">John Doe</h4>
-                        <p class="mar-bottom-5"> CEO/Mario Brand</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <p class="content mar-0">This is the third time I've used Travelo Website and telling you the truth their services are always reliable and it ony takes few minutes to plan and finalize.</p>
-                        <div class="ts-icon">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="ts-item col-md-4">
-                    <div class="ts-image">
-                        <img src="images/inbox2.jpg" alt="image">
-                    </div>
-                    <div class="ts-content">
-                        <h4 class="mar-bottom-5">John Doe</h4>
-                        <p class="mar-bottom-5"> CEO/Mario Brand</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <p class="content mar-0">This is the third time I've used Travelo Website and telling you the truth their services are always reliable and it ony takes few minutes to plan and finalize.</p>
-                        <div class="ts-icon">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="ts-item col-md-4">
-                    <div class="ts-image">
-                        <img src="images/inbox1.jpg" alt="image">
-                    </div>
-                    <div class="ts-content">
-                        <h4 class="mar-bottom-5">John Doe</h4>
-                        <p class="mar-bottom-5"> CEO/Mario Brand</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <p class="content mar-0">This is the third time I've used Travelo Website and telling you the truth their services are always reliable and it ony takes few minutes to plan and finalize.</p>
-                        <div class="ts-icon">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt30">
+                <div class="s-block up-hor">
+                    <div class="s-card-icon"><img src="~/images/icons/trasparency.svg" alt="service" class="img-fluid" /></div>
+                    <h4>Trasparency and ease of work</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Reviews -->
+    </div>
+</section>
+<!--End why-choose-->
+<!--Start Footer-->
 
 @section Scripts{
     <script src="~/js/owner/layout-basket-count.js"></script>
