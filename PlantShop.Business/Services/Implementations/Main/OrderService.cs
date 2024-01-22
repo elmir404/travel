@@ -6,7 +6,6 @@ using PlantShop.Business.Dtos.Post.Main;
 using PlantShop.Business.Results;
 using PlantShop.Business.Services.Abstractions.Main;
 using PlantShop.DataAccess.Entities.Main;
-using PlantShop.DataAccess.Migrations;
 using PlantShop.DataAccess.Repositories.Abstractions.Main;
 using PlantShop.DataAccess.Repositories.Implementations.Main;
 using PlantShop.DataAccess.UnitOfWorks;

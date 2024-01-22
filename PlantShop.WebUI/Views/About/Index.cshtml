@@ -11,12 +11,12 @@
                     <div class="bread-inner">
                         <div class="bread-menu">
                             <ul>
-                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                                <li><a asp-controller="About" asp-action="Index">About Us</a></li>
+                                <li><a asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
+                                <li><a asp-controller="About" asp-action="Index">@Localizer["AboutUs"]</a></li>
                             </ul>
                         </div>
                         <div class="bread-title">
-                            <h2>About Company</h2>
+                            <h2>@Localizer["About"]</h2>
                         </div>
                     </div>
                 </div>
@@ -36,10 +36,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="common-heading text-l ">
-                    <span>About Us</span>
-                    <h2>About Agency</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.</p>
+                    <span>@Localizer["AboutUs"]</span>
+                    <h2>@Localizer["AboutA"]</h2>
+                    <p>@Localizer["description"]</p>
                 </div>
                
             </div>
@@ -53,8 +52,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="common-heading">
-                    <span>We Are Awesome</span>
-                    <h2 class="mb30">Why Choose Us</h2>
+                    <span>@Localizer["features-title"]</span>
+                    <h2 class="mb30">@Localizer["features-header"]</h2>
                 </div>
             </div>
         </div>
@@ -94,5 +93,5 @@
 <!--Start Footer-->
 
 @section Scripts{
-    <script src="~/js/owner/layout-basket-count.js"></script>
+   
 }

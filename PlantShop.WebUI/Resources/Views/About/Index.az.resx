@@ -118,13 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>About Company</value>
+    <value>Şirkət Haqqında</value>
   </data>
   <data name="AboutA" xml:space="preserve">
-    <value />
+    <value>Agentlik Haqqında</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
-    <value />
+    <value>Haqqımızda</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>"Sakura GFB Group" MMC fəaliyyətə başladığı gündən, hazırkı vaxtadək bir sıra uğurlu layihələrə imza atmış və müxtəlif sahələrdə fəaliyyətini uğurla davam etdirməkdədir. Əsas fəaliyyətimiz xaricdə təhsil, xaricdə işlə təminetmə, iş yerlərinin müəyyən edilərək təklif edilməsi üzrə konsaltinq, turizm, müxtəlif xidmət və istehlak məhsullarının xaricdən gətirilməsi və ya göndərilməsinin təşkili, hüquqi yardım və digər sahələrlə bağlı qanunvericiliyə uyğun, beynəlxalq və yerli standartların tələbləri qorunmaqla xidmətlər təklif edir.
+Şirkət ölkə iqtisadiyyatının inkişafına və cəmiyyətin rifahına köməklik göstərmək məqsədilə yüksək professional və etik standartlara uyğun gələn keyfiyyətli xidmətlər təqdim edir.
+Biz, Sizə göstərdiyimiz xidmətlərin keyfiyyətinə və konfidensiallığına təminat veririk.</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>Xidmət göstərdiyimiz sahəni dərindən araşdırır və analiz edirik</value>
@@ -142,7 +147,7 @@
     <value>İnnovasiya və kreativlik biznesimizin əsasını təşkil edir</value>
   </data>
   <data name="features-3-title" xml:space="preserve">
-    <value>Kreativ və İnnovativ Hələr</value>
+    <value>Kreativ və İnnovativ Həllər</value>
   </data>
   <data name="features-4-description" xml:space="preserve">
     <value>Xidmət göstərdiyimiz hər sahədə şəffaflığa tam təminat veririk</value>
@@ -150,10 +155,13 @@
   <data name="features-4-title" xml:space="preserve">
     <value>Dürüstlük və Şəffaflıq</value>
   </data>
+  <data name="features-header" xml:space="preserve">
+    <value>Niyə Bizi Seçməlisiniz</value>
+  </data>
   <data name="features-title" xml:space="preserve">
-    <value>Elektron İsmarıclar Bir Platformda</value>
+    <value>İŞ PRİNSİPLƏRİMİZ</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value />
+    <value>Əsas Səhifə</value>
   </data>
 </root>

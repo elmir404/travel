@@ -16,23 +16,7 @@ namespace PlantShop.DataAccess.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<ProductOrder>()
-                .HasKey(po => new { po.ProductId, po.OrderId });
-
-            modelBuilder.Entity<ProductOrder>()
-                .HasOne(sc => sc.Product)
-                .WithMany(s => s.ProductOrders)
-                .HasForeignKey(sc => sc.ProductId);
-
-            modelBuilder.Entity<ProductOrder>()
-                .HasOne(sc => sc.Order)
-                .WithMany(c => c.ProductOrders)
-                .HasForeignKey(sc => sc.OrderId);
-
-            modelBuilder.Entity<PhoneNumber>()
-                .HasMany(x => x.Orders)
-                .WithOne(c => c.Number)
-                .HasForeignKey(sc => sc.numberId); 
+           
           
 
             modelBuilder.Entity<IdentityUserLogin<int>>(b =>
@@ -41,17 +25,10 @@ namespace PlantShop.DataAccess.Context
             });
         }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<PhoneNumber> PhoneNumbers { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<ProductOrder> ProductOrders { get; set; }
-        public DbSet<ProductFile> ProductFiles { get; set; }
-        public DbSet<About> Abouts { get; set; }
-        public DbSet<AboutCompany> AboutCompanies { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogFile> BlogFiles { get; set; }
         public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Slider> Sliders { get; set; }
-        public DbSet<SliderFile> SliderFiles { get; set; }
+      
         public DbSet<F.File> Files { get; set; }
     }
 }

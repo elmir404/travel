@@ -121,10 +121,15 @@
     <value>About Company</value>
   </data>
   <data name="AboutA" xml:space="preserve">
-    <value />
+    <value>About Agency</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
-    <value />
+    <value>About Us</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Since its inception, "Sakura GFB Group" LLC has signed a number of successful projects and is successfully continuing its activities in various fields. Our main activity is education abroad, employment abroad, consulting on identifying and offering jobs, tourism, organizing the import or shipment of various services and consumer products, legal assistance and other fields, and offers services in compliance with international and local standards. .
+The company provides quality services that comply with high professional and ethical standards in order to help the development of the country's economy and the welfare of the society.
+We guarantee the quality and confidentiality of the services we provide to you.</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>We deeply research and analyze the area we provide services</value>
@@ -150,10 +155,13 @@
   <data name="features-4-title" xml:space="preserve">
     <value>Honesty and Transparency</value>
   </data>
+  <data name="features-header" xml:space="preserve">
+    <value>Why Choose Us</value>
+  </data>
   <data name="features-title" xml:space="preserve">
-    <value>All Electronic Messages in One Place</value>
+    <value>Our Business Principles</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value />
+    <value>Home Page</value>
   </data>
 </root>

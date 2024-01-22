@@ -129,7 +129,7 @@ namespace PlantShop.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.About", b =>
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Blog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -155,104 +155,33 @@ namespace PlantShop.DataAccess.Migrations
                     b.Property<string>("EnTitle")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RuDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RuTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Abouts");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.AboutCompany", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FacebookLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("InstagramLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MapAddress")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Number")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TwitterLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AboutCompanies");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AzName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("EnName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<string>("JpDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("JpTitle")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("RegDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("RegUserId")
                         .HasColumnType("int");
 
-                    b.Property<string>("RuName")
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ViDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ViTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Contact", b =>
@@ -269,10 +198,16 @@ namespace PlantShop.DataAccess.Migrations
                     b.Property<int?>("EditUserId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Number")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("RegDate")
@@ -281,15 +216,7 @@ namespace PlantShop.DataAccess.Migrations
                     b.Property<int>("RegUserId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Subject")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("numberId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("numberId");
 
                     b.ToTable("Contacts");
                 });
@@ -329,251 +256,6 @@ namespace PlantShop.DataAccess.Migrations
                     b.ToTable("Files");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("File");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Order", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Inrst")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PromoCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Random")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalUpPrice")
-                        .HasColumnType("float");
-
-                    b.Property<bool>("isActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("isConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("numberId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("numberId");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.PhoneNumber", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("ActiveDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Code")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("PhoneNumbers");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AzDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("AzName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("EnDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EnName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("Inrst")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RuDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RuName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Slug")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("UpPrice")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.ProductOrder", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Inrst")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ProductName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("UpPrice")
-                        .HasColumnType("float");
-
-                    b.HasKey("ProductId", "OrderId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("ProductOrders");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Slider", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AzDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("AzTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("EditUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("EnDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EnTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("RegDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RuDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RuTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sliders");
                 });
 
             modelBuilder.Entity("PlantShop.DataAccess.Entities.Users.ApplicationRole", b =>
@@ -686,28 +368,16 @@ namespace PlantShop.DataAccess.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.ProductFile", b =>
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.BlogFile", b =>
                 {
                     b.HasBaseType("PlantShop.DataAccess.Entities.Main.File");
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int?>("BlogId")
                         .HasColumnType("int");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("BlogId");
 
-                    b.HasDiscriminator().HasValue("ProductFile");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.SliderFile", b =>
-                {
-                    b.HasBaseType("PlantShop.DataAccess.Entities.Main.File");
-
-                    b.Property<int?>("SliderId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("SliderId");
-
-                    b.HasDiscriminator().HasValue("SliderFile");
+                    b.HasDiscriminator().HasValue("BlogFile");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -761,99 +431,18 @@ namespace PlantShop.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Contact", b =>
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.BlogFile", b =>
                 {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.PhoneNumber", "Number")
-                        .WithMany("Contacts")
-                        .HasForeignKey("numberId");
+                    b.HasOne("PlantShop.DataAccess.Entities.Main.Blog", "Blog")
+                        .WithMany("BlogFiles")
+                        .HasForeignKey("BlogId");
 
-                    b.Navigation("Number");
+                    b.Navigation("Blog");
                 });
 
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Order", b =>
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Blog", b =>
                 {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.PhoneNumber", "Number")
-                        .WithMany("Orders")
-                        .HasForeignKey("numberId");
-
-                    b.Navigation("Number");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Product", b =>
-                {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.ProductOrder", b =>
-                {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.Order", "Order")
-                        .WithMany("ProductOrders")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.Product", "Product")
-                        .WithMany("ProductOrders")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.ProductFile", b =>
-                {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.Product", "Product")
-                        .WithMany("ProductFiles")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.SliderFile", b =>
-                {
-                    b.HasOne("PlantShop.DataAccess.Entities.Main.Slider", "Slider")
-                        .WithMany("SliderFiles")
-                        .HasForeignKey("SliderId");
-
-                    b.Navigation("Slider");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Category", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Order", b =>
-                {
-                    b.Navigation("ProductOrders");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.PhoneNumber", b =>
-                {
-                    b.Navigation("Contacts");
-
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Product", b =>
-                {
-                    b.Navigation("ProductFiles");
-
-                    b.Navigation("ProductOrders");
-                });
-
-            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Slider", b =>
-                {
-                    b.Navigation("SliderFiles");
+                    b.Navigation("BlogFiles");
                 });
 #pragma warning restore 612, 618
         }

@@ -118,13 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>About Company</value>
+    <value>Giới thiệu về công ty</value>
   </data>
   <data name="AboutA" xml:space="preserve">
-    <value />
+    <value>Giới thiệu đại lý</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
-    <value />
+    <value>Về chúng tôi</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Kể từ khi thành lập, "Sakura GFB Group" LLC đã ký kết một số dự án thành công và đang tiếp tục hoạt động thành công trong nhiều lĩnh vực khác nhau.  Hoạt động chính của chúng tôi là giáo dục ,tư vấn xác định và cung cấp việc làm, du lịch, tổ chức nhập khẩu hoặc vận chuyển các dịch vụ và sản phẩm tiêu dùng khác nhau, hỗ trợ pháp lý và các lĩnh vực đúng theo pháp luật quốc tế và địa phương.
+ Công ty cung cấp các dịch vụ chất lượng, đáp ứng các tiêu chuẩn chuyên môn và đạo đức cao nhằm góp phần phát triển nền kinh tế đất nước và phúc lợi xã hội.
+ Chúng tôi đảm bảo chất lượng và tính bảo mật của các dịch vụ khi cung cấp cho bạn.</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>Chúng tôi nghiên cứu và phân tích sâu sắc lĩnh vực chúng tôi cung cấp dịch vụ</value>
@@ -150,10 +155,13 @@
   <data name="features-4-title" xml:space="preserve">
     <value>Trung thực và minh bạch</value>
   </data>
+  <data name="features-header" xml:space="preserve">
+    <value>tại sao chọn chúng tôi</value>
+  </data>
   <data name="features-title" xml:space="preserve">
-    <value>Все электронные сообщения в одном месте</value>
+    <value>Nguyên tắc kinh doanh của chúng tôi</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value />
+    <value>Trang chủ</value>
   </data>
 </root>

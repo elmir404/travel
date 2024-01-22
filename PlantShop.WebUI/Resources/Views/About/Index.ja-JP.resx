@@ -118,13 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>About Company</value>
+    <value>会社について</value>
   </data>
   <data name="AboutA" xml:space="preserve">
-    <value />
+    <value>代理店について</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
-    <value />
+    <value>私たちについて</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>設立以来、「Sakura GFB Group」LLC は数多くの成功したプロジェクトを締結し、さまざまな分野で活動を成功裏に続けています。 私たちの主な活動は、海外での教育、海外での雇用、仕事の特定と提供に関するコンサルティング、観光、さまざまなサービスや消費者製品の輸入または発送の手配、法律支援などの分野であり、国際および現地の基準に準拠したサービスを提供しています。
+当社は、国の経済の発展と社会の福祉に貢献するために、高い専門的基準と倫理基準に準拠した質の高いサービスを提供しています。
+当社は、お客様に提供するサービスの品質と機密性を保証します。</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>サービスを提供する分野を徹底的に調査および分析します</value>
@@ -150,10 +155,13 @@
   <data name="features-4-title" xml:space="preserve">
     <value>正直さと透明性</value>
   </data>
+  <data name="features-header" xml:space="preserve">
+    <value>私たちを選ぶ理由</value>
+  </data>
   <data name="features-title" xml:space="preserve">
-    <value>Все электронные сообщения в одном месте</value>
+    <value>私たちの経営理念</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value />
+    <value>ホームページ</value>
   </data>
 </root>
