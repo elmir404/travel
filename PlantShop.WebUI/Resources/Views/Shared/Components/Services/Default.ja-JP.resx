@@ -117,10 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PromoDelete" xml:space="preserve">
-    <value>Promo Code discount removed</value>
+  <data name="Consalting" xml:space="preserve">
+    <value>雇用サービス</value>
   </data>
-  <data name="PromoOk" xml:space="preserve">
-    <value>Promo Code discount has been applied</value>
+  <data name="Description" xml:space="preserve">
+    <value>当社は、観光や法律などのさまざまな分野に特化しており、クライアントに提供する幅広いサービスで差別化を図っています。 休暇計画から法律サービスまで、当社の専門家チームがお客様のニーズにお応えします。</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>教育サービス</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>私たちが働く業界</value>
+  </data>
+  <data name="Law" xml:space="preserve">
+    <value>法律事務所</value>
+  </data>
+  <data name="Logicstics" xml:space="preserve">
+    <value>物流サービス</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>あらゆる分野でビジネスを支援</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>ツアーと旅行</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>ビジネスコンサルタント</value>
   </data>
 </root>

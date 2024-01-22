@@ -117,13 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Agree" xml:space="preserve">
-    <value>You cannot order unless you agree to the terms</value>
+  <data name="Consalting" xml:space="preserve">
+    <value>Business Consultant</value>
   </data>
-  <data name="Required" xml:space="preserve">
-    <value>Must be filled</value>
+  <data name="Description" xml:space="preserve">
+    <value>Our company, specialized in various fields such as tourism and law, makes a difference with the wide range of services it provides to our clients. From your vacation plans to legal services, our expert team is here to meet your needs.</value>
   </data>
-  <data name="Time" xml:space="preserve">
-    <value>The time is not specified</value>
+  <data name="Education" xml:space="preserve">
+    <value>Education Service</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>INDUSTRIES WE WORK FOR</value>
+  </data>
+  <data name="Law" xml:space="preserve">
+    <value>Law Service</value>
+  </data>
+  <data name="Logicstics" xml:space="preserve">
+    <value>Logistic Service</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>String1</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Helping Businesses in All Domains</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>Tour and Travels</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Employment service</value>
   </data>
 </root>

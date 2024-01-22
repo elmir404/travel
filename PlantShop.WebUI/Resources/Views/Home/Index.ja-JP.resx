@@ -117,8 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About Us" xml:space="preserve">
-    <value>О нас</value>
+  <data name="contact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="faq-1" xml:space="preserve">
+    <value>成功のために協力する</value>
+  </data>
+  <data name="faq-1-desc" xml:space="preserve">
+    <value>お客様と協力し、共通の目標を達成し、成功を共​​に祝うことは、私たちにとって単なる仕事ではなく、使命でもあります。</value>
+  </data>
+  <data name="faq-2" xml:space="preserve">
+    <value>一緒に山頂を制覇しましょう</value>
+  </data>
+  <data name="faq-2-desc" xml:space="preserve">
+    <value>私たちは、お客様に提供する独自のソリューションとともに、お客様の目標を決定し、実現するためにここにいます。 私たちは、最高水準のサービスを提供することで、お客様のビジネスをトップに導くパートナーシップを確立できることを楽しみにしています。</value>
+  </data>
+  <data name="faq-3" xml:space="preserve">
+    <value>Как человек может открыть личное сообщение?</value>
+  </data>
+  <data name="faq-3-desc" xml:space="preserve">
+    <value>Человек, которому вы отправляете открытку, сможет открыть ваше сообщение, отсканировав QR-код на своем телефоне.</value>
+  </data>
+  <data name="faq-4" xml:space="preserve">
+    <value>За сколько дней доставляется открытка?</value>
+  </data>
+  <data name="faq-4-desc" xml:space="preserve">
+    <value>Срок доставки открытки может меняться в зависимости от количества заказов.</value>
+  </data>
+  <data name="faq-5" xml:space="preserve">
+    <value>Сколько дней сообщение остаётся на платформе?</value>
+  </data>
+  <data name="faq-5-desc" xml:space="preserve">
+    <value>Ваше сообщение хранится в нашей базе данных в течение 7 дней после доставки.Сообщение удаляется, если оплата не будет произведена в течение 3 дней после создания.</value>
+  </data>
+  <data name="faq-6" xml:space="preserve">
+    <value>Откуда я могу посмотреть мои сообщения?</value>
+  </data>
+  <data name="faq-6-desc" xml:space="preserve">
+    <value>Вы можете просмотреть свои сообщения, зайдя в раздел «Заказы», ​​их можно включить и отключить.</value>
+  </data>
+  <data name="faq-description" xml:space="preserve">
+    <value>Здесь может быть ответ на ваш вопрос</value>
+  </data>
+  <data name="faq-footer" xml:space="preserve">
+    <value>У вас есть другие вопросы?</value>
+  </data>
+  <data name="faq-title" xml:space="preserve">
+    <value>私たちはクリエイティブエージェンシーです</value>
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>サービスを提供する分野を徹底的に調査および分析します</value>
@@ -146,5 +191,44 @@
   </data>
   <data name="features-title" xml:space="preserve">
     <value>Все электронные сообщения в одном месте</value>
+  </data>
+  <data name="header-button" xml:space="preserve">
+    <value>始めましょう</value>
+  </data>
+  <data name="header-description" xml:space="preserve">
+    <value>私たちは、教育から旅行に至るまで、あらゆる段階でお客様とともにあり、あらゆる分野で質の高いサービスを提供します。</value>
+  </data>
+  <data name="header-title" xml:space="preserve">
+    <value>高品質かつ手頃な価格のソリューションを作成します</value>
+  </data>
+  <data name="help-description" xml:space="preserve">
+    <value>Интересно, как работает наша платформа? Тогда смотрите наше видео, следуйте простым шагам, чтобы отправить свою первую открытку.</value>
+  </data>
+  <data name="help-title" xml:space="preserve">
+    <value>Узнайте, Как Это Сделать</value>
+  </data>
+  <data name="onboard-1" xml:space="preserve">
+    <value>Сюрприз</value>
+  </data>
+  <data name="onboard-2" xml:space="preserve">
+    <value>Забота</value>
+  </data>
+  <data name="onboard-3" xml:space="preserve">
+    <value>Радость</value>
+  </data>
+  <data name="service-description" xml:space="preserve">
+    <value>Не можете выбрать подарок?</value>
+  </data>
+  <data name="service-description-1" xml:space="preserve">
+    <value>Не знаете, что подарить близким в особенные дни? Давайте поздравим их уникальными открытками!</value>
+  </data>
+  <data name="service-description-2" xml:space="preserve">
+    <value>Передайте свои лучшие слова через нас, покажите своим близким, как сильно вы их любите.</value>
+  </data>
+  <data name="service-title" xml:space="preserve">
+    <value>САМЫЙ ПРЕКРАСНЫЙ ПОДАРОК</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>Начните радовать своих любимых</value>
   </data>
 </root>

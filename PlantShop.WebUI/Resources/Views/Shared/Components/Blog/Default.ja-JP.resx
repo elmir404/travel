@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Error" xml:space="preserve">
-    <value>Hər hansı bir xəta baş verdi</value>
+  <data name="Header" xml:space="preserve">
+    <value>更新の通知を受け取る</value>
   </data>
-  <data name="Go to Home" xml:space="preserve">
-    <value>Ana səhifə</value>
+  <data name="Share" xml:space="preserve">
+    <value>共有</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>最新ニュース</value>
   </data>
 </root>

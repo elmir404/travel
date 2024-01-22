@@ -117,13 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Agree" xml:space="preserve">
-    <value>Вы не можете заказать, если не согласны с условиями</value>
+  <data name="Consalting" xml:space="preserve">
+    <value>Tư vấn kinh doanh</value>
   </data>
-  <data name="Required" xml:space="preserve">
-    <value>Должен быть заполнен</value>
+  <data name="Description" xml:space="preserve">
+    <value>Công ty của chúng tôi, chuyên về các lĩnh vực khác nhau như du lịch và luật, tạo nên sự khác biệt với hàng loạt dịch vụ cung cấp cho khách hàng. Từ kế hoạch kỳ nghỉ của bạn đến các dịch vụ pháp lý, đội ngũ chuyên gia của chúng tôi luôn sẵn sàng đáp ứng nhu cầu của bạn.</value>
   </data>
-  <data name="Time" xml:space="preserve">
-    <value>Время не указано</value>
+  <data name="Education" xml:space="preserve">
+    <value>Dịch vụ giáo dục</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>NGÀNH CHÚNG TÔI LÀM VIỆC</value>
+  </data>
+  <data name="Law" xml:space="preserve">
+    <value>Dịch vụ pháp luật</value>
+  </data>
+  <data name="Logicstics" xml:space="preserve">
+    <value>Dịch vụ hậu cần</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Hỗ trợ doanh nghiệp trong mọi lĩnh vực</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>Du lịch và Du lịch</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Dịch vụ việc làm</value>
   </data>
 </root>

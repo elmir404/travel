@@ -117,34 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About Us" xml:space="preserve">
-    <value>О нас</value>
+  <data name="Header" xml:space="preserve">
+    <value>YENİLİKLƏRDƏN XƏBƏRDAR OLUN</value>
   </data>
-  <data name="features-1-description" xml:space="preserve">
-    <value>Chúng tôi nghiên cứu và phân tích sâu sắc lĩnh vực chúng tôi cung cấp dịch vụ</value>
+  <data name="Share" xml:space="preserve">
+    <value>Paylaşın</value>
   </data>
-  <data name="features-1-title" xml:space="preserve">
-    <value>Nghiên cứu và phân tích</value>
-  </data>
-  <data name="features-2-description" xml:space="preserve">
-    <value>Chúng tôi là người giỏi nhất trong lĩnh vực kinh doanh của mình! Điều này được xác nhận bởi tất cả khách hàng của chúng tôi</value>
-  </data>
-  <data name="features-2-title" xml:space="preserve">
-    <value>Sự hài lòng của khách hàng</value>
-  </data>
-  <data name="features-3-description" xml:space="preserve">
-    <value>Đổi mới và sáng tạo là cốt lõi trong hoạt động kinh doanh của chúng tôi</value>
-  </data>
-  <data name="features-3-title" xml:space="preserve">
-    <value>Ảnh tĩnh sáng tạo và đổi mới</value>
-  </data>
-  <data name="features-4-description" xml:space="preserve">
-    <value>Chúng tôi cung cấp sự minh bạch hoàn toàn trong mọi lĩnh vực chúng tôi cung cấp dịch vụ</value>
-  </data>
-  <data name="features-4-title" xml:space="preserve">
-    <value>Trung thực và minh bạch</value>
-  </data>
-  <data name="features-title" xml:space="preserve">
-    <value>Все электронные сообщения в одном месте</value>
+  <data name="Title" xml:space="preserve">
+    <value>Son Yeniliklər</value>
   </data>
 </root>

@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Cost" xml:space="preserve">
-    <value>Qiymət</value>
+  <data name="Header" xml:space="preserve">
+    <value> NHẬN THÔNG BÁO CẬP NHẬT</value>
   </data>
-  <data name="Price" xml:space="preserve">
-    <value>Məbləğ</value>
+  <data name="Share" xml:space="preserve">
+    <value>Chia sẻ</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tin mới nhất</value>
   </data>
 </root>

@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
@@ -70,13 +69,13 @@ app.UseStaticFiles();
 app.UseAuthentication();
 app.UseSession();
 app.UseRouting();
-
+app.UseRequestLocalization();
 app.UseAuthorization();
 var supportedCultures = new[]
 {
     new CultureInfo("az"),
     new CultureInfo("en"),
-    new CultureInfo("jp"),
+    new CultureInfo("ja-JP"),
     new CultureInfo("vi"),
 };
 

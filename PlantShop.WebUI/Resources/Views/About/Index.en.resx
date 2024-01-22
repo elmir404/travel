@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="bouqet" xml:space="preserve">
-    <value>Buketlər</value>
+  <data name="About" xml:space="preserve">
+    <value>About Company</value>
+  </data>
+  <data name="AboutA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value />
   </data>
   <data name="features-1-description" xml:space="preserve">
     <value>We deeply research and analyze the area we provide services</value>
@@ -146,5 +152,8 @@
   </data>
   <data name="features-title" xml:space="preserve">
     <value>All Electronic Messages in One Place</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value />
   </data>
 </root>

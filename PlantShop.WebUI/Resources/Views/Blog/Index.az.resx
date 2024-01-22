@@ -117,22 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Delivery" xml:space="preserve">
-    <value>Доставка</value>
-  </data>
-  <data name="Discount Card" xml:space="preserve">
-    <value>Дисконтная карта</value>
-  </data>
-  <data name="Price without discount" xml:space="preserve">
-    <value>Цена без скидки</value>
-  </data>
-  <data name="Promo code" xml:space="preserve">
-    <value>Промокод</value>
-  </data>
-  <data name="Special Discount" xml:space="preserve">
-    <value>Специальная скидка</value>
-  </data>
-  <data name="Total Price" xml:space="preserve">
-    <value>Окончательная сумма</value>
-  </data>
 </root>

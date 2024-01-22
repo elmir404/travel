@@ -117,13 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddtoBasket" xml:space="preserve">
-    <value>Səbətə At</value>
+  <data name="About" xml:space="preserve">
+    <value>私たちについて</value>
   </data>
-  <data name="Empty" xml:space="preserve">
-    <value>Hal hazırda heç bir məhsulu seçməmisiz !</value>
+  <data name="Account" xml:space="preserve">
+    <value>Счет</value>
   </data>
-  <data name="Selected" xml:space="preserve">
-    <value>Seçilmişlər</value>
+  <data name="AddHome" xml:space="preserve">
+    <value>Разместить объявление</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="Basket" xml:space="preserve">
+    <value>Корзина</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Компании</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>接触</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="Corporate" xml:space="preserve">
+    <value>Корпоративным клиентам</value>
+  </data>
+  <data name="Crafted" xml:space="preserve">
+    <value>&lt;a href="https://tesseract.az/"&gt;Tesseract LLC&lt;/a&gt; によって開発されました</value>
+  </data>
+  <data name="DiscountCards" xml:space="preserve">
+    <value>Дисконтные карты</value>
+  </data>
+  <data name="Districts" xml:space="preserve">
+    <value>Регионы</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホームページ</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>Как это работает?</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="Language1" xml:space="preserve">
+    <value>Аз</value>
+  </data>
+  <data name="Language2" xml:space="preserve">
+    <value>Анг</value>
+  </data>
+  <data name="Language3" xml:space="preserve">
+    <value>Ру</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Заказы</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="QuickLink" xml:space="preserve">
+    <value>クイックリンク</value>
+  </data>
+  <data name="Refund" xml:space="preserve">
+    <value>Возврат платежа</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>регистр</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Безопасность</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>サービス</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Регистр</value>
+  </data>
+  <data name="SubscribeButton" xml:space="preserve">
+    <value>Подписаться</value>
+  </data>
+  <data name="SubscribeSubTitle" xml:space="preserve">
+    <value>Подпишитесь, чтобы быть в курсе новостей!</value>
+  </data>
+  <data name="SubscribeTitle" xml:space="preserve">
+    <value>Подписка</value>
+  </data>
+  <data name="Terms" xml:space="preserve">
+    <value>Условия и положения</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>さくらトラベル</value>
   </data>
 </root>
