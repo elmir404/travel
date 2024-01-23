@@ -14,8 +14,8 @@ namespace PlantShop.WebUI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var abouts = await _aboutService.GetAbout();
-            return View(abouts.Data);
+           
+            return View();
         }
         public async Task<IActionResult> HowItWorks()
         {

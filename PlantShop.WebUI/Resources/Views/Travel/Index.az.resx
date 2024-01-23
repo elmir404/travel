@@ -117,4 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>Peşəkar xidmətimiz və fərdiləşdirilmiş tur paketlərimizlə səyahət zövqünü maksimuma çatdırın. Sakura Travel ilə xəyal etdiyiniz tətili yaşamaq imtiyazını kəşf edin!</value>
+  </data>
+  <data name="family-desc" xml:space="preserve">
+    <value>Ailənizlə keçirəcəyiniz bu özəl anlarda əyləncə və tarixlə dolu destinasyonlarımız sizi gözləyir. Xəyal etdiyiniz tətil üçün bizə qoşulun və təhlükəsiz kəşf edin!</value>
+  </data>
+  <data name="family-title" xml:space="preserve">
+    <value>Ailə Dostu</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>Peşəkar Bələdçilər</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Ana Səhifə</value>
+  </data>
+  <data name="hotel-dec" xml:space="preserve">
+    <value>Səyahətləriniz boyu hər bir detalı diqqətlə nəzərdən keçirdik və sizə ən yaxşı təcrübə təqdim etməyə çalışdıq. Rahat səyahətdən həzz alın!</value>
+  </data>
+  <data name="hotel-title" xml:space="preserve">
+    <value>Komfortlu Səyahət</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>İndi Müraciət Edin</value>
+  </data>
+  <data name="link-description" xml:space="preserve">
+    <value>Həyatınızın ən unudulmas səyahət təcrübəsini bizimlə reallaşdırın.İndi turlarımızla bağlı ətraflı məlumat alın!</value>
+  </data>
+  <data name="link-title" xml:space="preserve">
+    <value>Möhtəşəm &lt;span class="text-second text-bold"&gt;Sakura Travel&lt;/span&gt; Təcrübəsi</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Səyahət Xidmətimiz</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Sakura Travel</value>
+  </data>
+  <data name="self" xml:space="preserve">
+    <value>Sərbəst Turlar</value>
+  </data>
+  <data name="sight" xml:space="preserve">
+    <value>Görməli Yerlər</value>
+  </data>
+  <data name="special" xml:space="preserve">
+    <value>Özel Turlar</value>
+  </data>
+  <data name="team-desc" xml:space="preserve">
+    <value>Səyahət təcrübəsində ixtisaslaşmış peşəkar komandamız müştərilərimizin arzularını gerçəkləşdirmək üçün diqqətlə çalışır.</value>
+  </data>
+  <data name="team-title" xml:space="preserve">
+    <value>Peşəkar Komanda</value>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>Mövzu Turu</value>
+  </data>
+  <data name="TravelHeader" xml:space="preserve">
+    <value>Bizimlə Səyahətin Üstünlükləri</value>
+  </data>
+  <data name="TravelTitle" xml:space="preserve">
+    <value>Sakura Travel ilə səyahətin üstünlüklərindən faydalanın</value>
+  </data>
+  <data name="trending" xml:space="preserve">
+    <value>Trend Məkanlar</value>
+  </data>
 </root>

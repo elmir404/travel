@@ -8,11 +8,11 @@
                         <div class="bread-menu">
                             <ul>
                                 <li><a asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
-                                <li><a asp-controller="About" asp-action="Index">@Localizer["AboutUs"]</a></li>
+                                <li><a asp-controller="About" asp-action="Index">@Localizer["PageHeader"]</a></li>
                             </ul>
                         </div>
                         <div class="bread-title">
-                            <h2>@Localizer["About"]</h2>
+                            <h2>@Localizer["PageTitle"]</h2>
                         </div>
                     </div>
                 </div>
@@ -26,40 +26,40 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="common-heading text-l">
-                    <span>Why Choose Us</span>
-                    <h2 class="mb20">Performance Marketing Services We Offer</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <span>@Localizer["TravelHeader"]</span>
+                    <h2 class="mb20">@Localizer["TravelTitle"]</h2>
+                    <p>@Localizer["Description"]</p>
                     <div class="itm-media-object mt40 tilt-3d">
                         <div class="media">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="images/icons/computers.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="~/images/icons/professional-services.png" alt="icon" class="layer"></div>
                             <div class="media-body">
-                                <h4>High-Quality Leads</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
+                                <h4>@Localizer["team-title"]</h4>
+                                <p>@Localizer["team-desc"]</p>
                             </div>
                         </div>
                         <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="images/icons/worker.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="~/images/icons/review.png" alt="icon" class="layer"></div>
                             <div class="media-body">
-                                <h4>Real Time Leads</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
+                                <h4>@Localizer["hotel-title"]</h4>
+                                <p>@Localizer["hotel-dec"]</p>
                             </div>
                         </div>
                         <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="images/icons/deal.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="~/images/icons/family.png" alt="icon" class="layer"></div>
                             <div class="media-body">
-                                <h4>Get Consistent Leads</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
+                                <h4>@Localizer["family-title"]</h4>
+                                <p>@Localizer["family-desc"]</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="single-image"> <img src="images/about/marketing-service.png" alt="hero image" class="img-fluid" /> </div>
+                <div class="single-image"> <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/eb00e33b-c87f-4f86-8d8b-7c33707ca8c7/oh3HUrx9wY.json" class="img-fluid" background="transparent" speed="1"  loop  autoplay direction="1" mode="normal"></lottie-player> </div>
                 <div class="cta-card mt60 text-center">
-                    <h3>Get your <span class="text-second text-bold">FREE</span> Digital Audit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper.</p>
-                    <a href="#" class="btn-outline lnk mt30">Get Strategy Call  <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                    <h3>@Localizer["link-title"]</h3>
+                    <p>@Localizer["link-description"]</p>
+                    <a asp-controller="Contact"  asp-action="Index" class="btn-outline lnk mt30">@Localizer["link"]  <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
             </div>
         </div>

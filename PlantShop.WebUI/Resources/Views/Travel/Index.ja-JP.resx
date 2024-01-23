@@ -117,4 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>当社のプロフェッショナルなサービスとカスタマイズされたツアーパッケージで旅行を最大限に楽しんでください。 サクラトラベルで夢の休暇を過ごす特権を発見してください!</value>
+  </data>
+  <data name="family-desc" xml:space="preserve">
+    <value>楽しさと歴史に満ちた目的地が、ご家族との特別なひとときをお待ちしております。 夢の休暇に参加して、安全に探検しましょう!</value>
+  </data>
+  <data name="family-title" xml:space="preserve">
+    <value>家族向けの</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>プロのガイド</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホームページ</value>
+  </data>
+  <data name="hotel-dec" xml:space="preserve">
+    <value>私たちはお客様のご旅行を通じてあらゆる細部を慎重に検討し、可能な限り最高の体験を提供できるよう努めています。 快適な旅をお楽しみください！</value>
+  </data>
+  <data name="hotel-title" xml:space="preserve">
+    <value>快適な旅行</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>今すぐお申し込みください</value>
+  </data>
+  <data name="link-description" xml:space="preserve">
+    <value>人生で最も忘れられない旅行体験を私たちと一緒に作りましょう。今すぐツアーの詳細情報を入手してください!</value>
+  </data>
+  <data name="link-title" xml:space="preserve">
+    <value>素晴らしい&lt;span class="text-second text-bold"&gt;桜旅行&lt;/span&gt;体験</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>当社の旅行サービス</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>さくらトラベル</value>
+  </data>
+  <data name="self" xml:space="preserve">
+    <value>無料ツアー</value>
+  </data>
+  <data name="sight" xml:space="preserve">
+    <value>興味のある場所</value>
+  </data>
+  <data name="special" xml:space="preserve">
+    <value>プライベートツアー</value>
+  </data>
+  <data name="team-desc" xml:space="preserve">
+    <value>旅行体験を専門とする当社のプロフェッショナルチームは、お客様の夢の実現に向けて熱心に取り組んでいます。</value>
+  </data>
+  <data name="team-title" xml:space="preserve">
+    <value>プロフェッショナルチーム</value>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>テーマツアー</value>
+  </data>
+  <data name="TravelHeader" xml:space="preserve">
+    <value>当社で旅行するメリット</value>
+  </data>
+  <data name="TravelTitle" xml:space="preserve">
+    <value>さくらトラベルで旅行をお得に満喫しましょう</value>
+  </data>
+  <data name="trending" xml:space="preserve">
+    <value>話題の場所</value>
+  </data>
 </root>

@@ -20,7 +20,7 @@ namespace PlantShop.WebUI.Controllers
             var blog = await _blogService.GetActiveBlogs();
 
           
-            return View(blog);
+            return View(blog.Data);
         }
 
         public async Task<IActionResult> Detail(string slug)

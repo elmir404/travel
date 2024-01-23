@@ -117,4 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>Tối đa hóa sự tận hưởng chuyến đi của bạn với dịch vụ chuyên nghiệp và các gói tour tùy chỉnh của chúng tôi. Khám phá đặc quyền tận hưởng kỳ nghỉ mơ ước của bạn cùng Sakura Travel!</value>
+  </data>
+  <data name="family-desc" xml:space="preserve">
+    <value>Những điểm đến đầy thú vị và lịch sử của chúng tôi đang chờ đón bạn trong những khoảnh khắc đặc biệt này cùng gia đình. Hãy tham gia cùng chúng tôi để có kỳ nghỉ mơ ước và khám phá an toàn!</value>
+  </data>
+  <data name="family-title" xml:space="preserve">
+    <value>Gia đình thân thiện</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>Hướng dẫn chuyên nghiệp</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="hotel-dec" xml:space="preserve">
+    <value>Chúng tôi đã xem xét cẩn thận từng chi tiết trong suốt chuyến đi của bạn và cố gắng cung cấp cho bạn trải nghiệm tốt nhất có thể. Tận hưởng một chuyến đi thoải mái!</value>
+  </data>
+  <data name="hotel-title" xml:space="preserve">
+    <value>Du lịch thoải mái</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Áp dụng ngay bây giờ</value>
+  </data>
+  <data name="link-description" xml:space="preserve">
+    <value>Hãy cùng chúng tôi tạo nên trải nghiệm du lịch khó quên nhất trong cuộc đời bạn. Nhận thêm thông tin về các tour du lịch của chúng tôi bây giờ!</value>
+  </data>
+  <data name="link-title" xml:space="preserve">
+    <value>Trải nghiệm &lt;span class="text-second text-bold"&gt;Du lịch Sakura&lt;/span&gt; tuyệt vời</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Dịch vụ du lịch của chúng tôi</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Du lịch Sakura</value>
+  </data>
+  <data name="self" xml:space="preserve">
+    <value>Tự hướng dẫn</value>
+  </data>
+  <data name="sight" xml:space="preserve">
+    <value>Tham quan</value>
+  </data>
+  <data name="special" xml:space="preserve">
+    <value>Chuyến tham quan đặc biệt</value>
+  </data>
+  <data name="team-desc" xml:space="preserve">
+    <value>Đội ngũ chuyên gia chuyên về trải nghiệm du lịch của chúng tôi làm việc chăm chỉ để biến ước mơ của khách hàng thành hiện thực.</value>
+  </data>
+  <data name="team-title" xml:space="preserve">
+    <value>Đội chuyên nghiệp</value>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>Chuyến tham quan theo chủ đề</value>
+  </data>
+  <data name="TravelHeader" xml:space="preserve">
+    <value>Ưu điểm của việc đi du lịch với chúng tôi</value>
+  </data>
+  <data name="TravelTitle" xml:space="preserve">
+    <value>Tận hưởng những lợi ích khi du lịch cùng Sakura Travel</value>
+  </data>
+  <data name="trending" xml:space="preserve">
+    <value>Địa điểm thịnh hành</value>
+  </data>
 </root>

@@ -26,6 +26,8 @@ public class MapProfile : Profile
         #region Main
         CreateMap<Category, AddCategoryDto>().ReverseMap();
         CreateMap<Category, GetCategoryDto>().ReverseMap();
+        CreateMap<Blog, GetBlogDto>().ReverseMap();
+        CreateMap<Blog, AddBlogDto>().ReverseMap();
         CreateMap<Order, AddOrderDto>()
             .ReverseMap();
         CreateMap<Product, GetProductDto>().ReverseMap();

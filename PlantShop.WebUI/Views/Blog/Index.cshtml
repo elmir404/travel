@@ -1,10 +1,12 @@
-﻿@model GetBlogDto
+﻿@model List<GetBlogDto>
+@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Bütün Bitkilər";
-    var istrue = true;
-    var active = "active";
-    int i = 0;
-    int j = 0;
+	ViewData["Title"] = "Sakura GFB Group:";
+
+		var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
+		var context = Context.Request;
+		var url = context.Path + context.QueryString;
+	
  
 }
 
@@ -17,12 +19,12 @@
 					<div class="bread-inner">
 						<div class="bread-menu">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#">Blog Grid 2</a></li>
+								<li><a href="index.html">@Localizer["Home"]</a></li>
+								<li><a href="#">@Localizer["PageHeader"]</a></li>
 							</ul>
 						</div>
 						<div class="bread-title">
-							<h2>Blog Grid 2</h2>
+							<h2>@Localizer["PageTitle"]</h2>
 						</div>
 					</div>
 				</div>
@@ -37,127 +39,60 @@
 
 		<div class="row">
 
-			<div class="col-lg-4 mt60">
+			@foreach (var blog in Model)
+			{
+				<div class="col-lg-4 mt60">
 				<div class="single-blog-post- shdo">
 					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-1.jpg" alt="girl" class="img-fluid"></a>
-						<div class="entry-blog-post dg-bg2">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Nodejs</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 23, 2020</a>
-							</span>
-						</div>
-					</div>
-					<div class="blog-content-tt">
-						<div class="single-blog-info-">
-							<h4><a href="#">Everything You Need To Know About Nodejs!</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-						<div class="post-social">
-							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
-								<div class="ss-inline-share-content">
-									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 mt60">
-				<div class="single-blog-post- shdo">
-					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-2.jpg" alt="girl" class="img-fluid"></a>
-						<div class="entry-blog-post bg-gradient12">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Laravel</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 24, 2020</a>
-							</span>
-						</div>
-					</div>
-					<div class="blog-content-tt">
-						<div class="single-blog-info-">
-							<h4><a href="#">Exploring the Key Features of Laravel 7 Framework</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-						<div class="post-social">
-							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
-								<div class="ss-inline-share-content">
-									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 mt60">
-				<div class="single-blog-post- shdo">
-					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-3.jpg" alt="girl" class="img-fluid"></a>
-						<div class="entry-blog-post dg-bg2">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Mobile Application</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 25, 2020</a>
-							</span>
-						</div>
-					</div>
-					<div class="blog-content-tt">
-						<div class="single-blog-info-">
-							<h4><a href="#">Best Technology for Mobile Application Development</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-						<div class="post-social">
-							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
-								<div class="ss-inline-share-content">
-									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+						<a href="#">
+							@if(blog.BlogFiles.Count()>0){
+									<img src="/@blog.BlogFiles.FirstOrDefault().Path" alt="@blog.BlogFiles.FirstOrDefault().FileName" class="img-fluid">
 
-			<div class="col-lg-4 mt60">
-				<div class="single-blog-post- shdo">
-					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-1.jpg" alt="girl" class="img-fluid"></a>
+							}
+							</a>
 						<div class="entry-blog-post dg-bg2">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Nodejs</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 23, 2020</a>
-							</span>
+								
+								
+									<span class="posted-on-">
+										<a asp-action="Detail" asp-controller="Blog" asp-route-slug="@blog.Slug">@Localizer["PageTitle"]</a>
+									</span>
+								
+								
 						</div>
 					</div>
 					<div class="blog-content-tt">
 						<div class="single-blog-info-">
-							<h4><a href="#">Everything You Need To Know About Nodejs!</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								@if (culture == "az")
+								{
+									<h4><a asp-action="Detail" asp-controller="Blog" asp-route-slug="@blog.Slug">@blog.AzTitle</a></h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								}
+								else if (culture == "en")
+								{
+									<h4><a asp-action ="Detail" asp-controller="Blog" asp-route-slug="@blog.Slug">@blog.EnTitle</a>
+
+									</h4>
+									<p>@blog.EnDescription</p>
+								}
+								else if (culture == "vi")
+								{
+									<h4><a asp-action="Detail" asp-controller="Blog" asp-route-slug="@blog.Slug">@blog.ViTitle</a></h4>
+									<p>@blog.ViDescription</p>
+								}
+								else
+								{
+									<h4><a asp-action ="Detail" asp-controller="Blog" asp-route-slug="@blog.Slug">@blog.JpTitle</a>
+
+									</h4>
+									<p>@blog.JpDescription</p>
+								}
+			
 						</div>
 						<div class="post-social">
 							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
 								<div class="ss-inline-share-content">
 									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
+										<a href="javascript:void(0)">@Localizer["Share"]:</a>
 										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
 										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
 										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
@@ -170,72 +105,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 mt60">
-				<div class="single-blog-post- shdo">
-					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-2.jpg" alt="girl" class="img-fluid"></a>
-						<div class="entry-blog-post bg-gradient13">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Laravel</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 24, 2020</a>
-							</span>
-						</div>
-					</div>
-					<div class="blog-content-tt">
-						<div class="single-blog-info-">
-							<h4><a href="#">Exploring the Key Features of Laravel 7 Framework</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-						<div class="post-social">
-							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
-								<div class="ss-inline-share-content">
-									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 mt60">
-				<div class="single-blog-post- shdo">
-					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-3.jpg" alt="girl" class="img-fluid"></a>
-						<div class="entry-blog-post dg-bg2">
-							<span class="bypost-"><a href="#"><i class="fas fa-tag"></i> Mobile Application</a></span>
-							<span class="posted-on-">
-								<a href="#"><i class="fas fa-clock"></i> Sep 25, 2020</a>
-							</span>
-						</div>
-					</div>
-					<div class="blog-content-tt">
-						<div class="single-blog-info-">
-							<h4><a href="#">Best Technology for Mobile Application Development</a></h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-						<div class="post-social">
-							<div class="ss-inline-share-wrapper ss-hover-animation-fade ss-inline-total-counter-left ss-left-inline-content ss-small-icons ss-with-spacing ss-circle-icons ss-without-labels">
-								<div class="ss-inline-share-content">
-									<div class="ss-social-icons-container">
-										<a href="javascript:void(0)">Shares</a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-										<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			}
+			
+
+			
 
 
 		</div>

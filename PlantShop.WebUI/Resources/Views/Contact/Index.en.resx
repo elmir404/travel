@@ -126,6 +126,9 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="email-desc" xml:space="preserve">
+    <value>Our support team will get back to in 24-h during standard business hours.</value>
+  </data>
   <data name="Head" xml:space="preserve">
     <value>Have a question? Get in touch</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="Title" xml:space="preserve">
     <value>Contact us</value>
+  </data>
+  <data name="workingtel" xml:space="preserve">
+    <value>Assistance hours: Monday – Friday, 9 am to 5 pm</value>
   </data>
   <data name="YourEmail" xml:space="preserve">
     <value>Enter your email</value>
