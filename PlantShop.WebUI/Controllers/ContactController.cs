@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using PlantShop.Business.Dtos.Post.Main;
 using PlantShop.Business.Services.Abstractions.Main;
 
@@ -8,11 +9,12 @@ namespace PlantShop.WebUI.Controllers
     {
         private readonly IAboutCompanyService _aboutCompanyService;
         private readonly IContactService _contactService;
-
-        public ContactController(IAboutCompanyService aboutCompanyService, IContactService contactService)
+        private readonly IStringLocalizer<ContactController> _localizer;
+        public ContactController(IAboutCompanyService aboutCompanyService, IContactService contactService, IStringLocalizer<ContactController> localizer)
         {
             _aboutCompanyService = aboutCompanyService;
             _contactService = contactService;
+            _localizer = localizer;
         }
 
         public async Task<IActionResult> Index()

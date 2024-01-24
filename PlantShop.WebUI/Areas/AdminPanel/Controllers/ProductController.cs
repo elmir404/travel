@@ -8,7 +8,7 @@ using PlantShop.Business.Services.Abstractions.Main;
 namespace PlantShop.WebUI.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
 
     public class ProductController : Controller
     {

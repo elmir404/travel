@@ -42,7 +42,7 @@ public class MapProfile : Profile
         CreateMap<AboutCompany, UpdateAboutCompany>().ReverseMap();
         CreateMap<Contact, GetContactDto>().ReverseMap();
         CreateMap<Contact, AddContactDto>().ReverseMap();
-        CreateMap<ProductFile, GetFileDto>().ReverseMap();
+        CreateMap<BlogFile, GetBlogFileDto>().ReverseMap();
         CreateMap<SliderFile, GetFileDto>().ReverseMap();
         CreateMap<Slider, GetSliderDto>().ReverseMap();
         CreateMap<Slider, AddSliderDto>().ReverseMap();
