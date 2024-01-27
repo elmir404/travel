@@ -1,4 +1,4 @@
-﻿@model List<GetProductDto>
+﻿@model List<GetBlogDto>
 <main id="main-container">
     <!-- Page Content -->
     <div class="content" style="width: 100% !important">
@@ -24,7 +24,7 @@
                         {
                             <tr>
                                 <td class="fs-sm">@product.Id</td>
-                                <td class="fw-semibold fs-sm">@product.AzName</td>
+                                <td class="fw-semibold fs-sm">@product.AzTitle</td>
                                 <td>
                                     <div class="btn-list">
                                         <button onclick=Detail(@product.Id) type="button" class="btn btn-sm btn-secondary"><i class="si si-menu"></i></button>
@@ -47,10 +47,10 @@
 @section Scripts{
     <script>
         function Detail(id) {
-            location.href = `/AdminPanel/Product/Detail?Id=${id}`;
+            location.href = `/AdminPanel/Blog/Detail?Id=${id}`;
         }
         function Edit(id) {
-            location.href = `/AdminPanel/Product/Update?Id=${id}`;
+            location.href = `/AdminPanel/Blog/Update?Id=${id}`;
         }
         $('#product-table').on('click', '.remove', function () {
             var table = $('#product-table').DataTable();
@@ -69,7 +69,7 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "DELETE",
-                        url: `/AdminPanel/Product/Delete?Id=${id}`,
+                        url: `/AdminPanel/Blog/Delete?Id=${id}`,
                         success: function (result) {
                             if (result.success == true) {
                                 Swal.fire(

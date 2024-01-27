@@ -57,7 +57,7 @@ namespace PlantShop.WebUI.Controllers
                 ModelState.AddModelError("", _localizer["Email or Password is incorrect"]);
                 return View(loginUser);
             }
-            return Redirect("/AdminPanel/Product/List");
+            return Redirect("/AdminPanel/Contact/List");
 
         }
 

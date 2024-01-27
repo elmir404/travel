@@ -2,19 +2,19 @@
 {
     public static class Helper
     {
-        public static async Task SendSmsAsync(string phone, string message)
-        {
-            string smsMessage = "http://www.poctgoyercini.com/api_http/sendsms.asp?user=weplant.az_s&password=weplant123s&gsm=" + phone + "&text=" + message;
+        //public static async Task SendSmsAsync(string phone, string message)
+        //{
+        //    string smsMessage = "http://www.poctgoyercini.com/api_http/sendsms.asp?user=weplant.az_s&password=weplant123s&gsm=" + phone + "&text=" + message;
 
-            using (var httpClient = new HttpClient())
-            {
-                using (var response = await httpClient.GetAsync(smsMessage))
-                {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                }
-            }
+        //    using (var httpClient = new HttpClient())
+        //    {
+        //        using (var response = await httpClient.GetAsync(smsMessage))
+        //        {
+        //            string apiResponse = await response.Content.ReadAsStringAsync();
+        //        }
+        //    }
 
-        }
+        //}
         public static string GetRandomString()
         {
 

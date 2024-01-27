@@ -27,13 +27,11 @@ namespace PlantShop.Business.Services.Implementations.Main
         }
         public async Task<ServiceResult> AddContact(AddContactDto contact)
         {
-           var phone=await _phoneRepository.GetPhoneByNumber(contact.Number);
-            if (phone != null)
-            {
-               
-               
-            }
-            return new ServiceResult(false, "error");
+            var request = _mapper.Map<Contact>(contact);
+
+            await _unitOfWork.Repository<Contact>().AddAsync(request);
+            _unitOfWork.Commit();
+            return new ServiceResult(true);
         }
        
 

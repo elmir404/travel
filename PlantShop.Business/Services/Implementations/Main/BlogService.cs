@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Newtonsoft.Json.Linq;
 using PlantShop.Business.Dtos.Get.Main;
 using PlantShop.Business.Dtos.Post.Main;
 using PlantShop.Business.Helpers;
@@ -200,7 +201,7 @@ namespace Portfolio.Business.Services.Implementations.Main
             var query = _blogRepository.SearchBlogs();
 
             var page = query.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
-
+          
             SearchResult<IEnumerable<GetBlogDto>> response = new SearchResult<IEnumerable<GetBlogDto>>()
             {
                 Value = _mapper.Map<IEnumerable<GetBlogDto>>(page.Select(p => p)),
@@ -208,8 +209,8 @@ namespace Portfolio.Business.Services.Implementations.Main
                 CurrentPage = currentPage,
                 PageSize = pageSize
             };
-
-            return new ServiceResult(true, response);
+            var blogs = _mapper.Map<IEnumerable<GetBlogDto>>(page.Select(p => p));
+            return new ServiceResult(true, blogs);
         }
     }
 }

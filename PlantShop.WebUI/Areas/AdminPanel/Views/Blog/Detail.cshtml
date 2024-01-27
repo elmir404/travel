@@ -1,0 +1,88 @@
+﻿@model GetBlogDto
+<div class="main-content app-content mt-0">
+    <div class="side-app">
+        <!-- CONTAINER -->
+        <div class="main-container container-fluid">
+            <!-- ROW-1 OPEN -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-body">
+                        <div id="updateHome" style="margin-top: 5%">
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Az Name :</label>
+                                <div class="col-md-9">
+                                    <input type="text" asp-for="@Model.AzTitle" class="form-control" disabled style="background-color: white !important">
+                                </div>
+                            </div> <div class="row mb-4">
+                                <label class="col-md-3 form-label">En Name :</label>
+                                <div class="col-md-9">
+                                    <input type="text" asp-for="@Model.EnTitle" class="form-control" disabled style="background-color: white !important">
+                                </div>
+                            </div> <div class="row mb-4">
+                                <label class="col-md-3 form-label">Jp Name :</label>
+                                <div class="col-md-9">
+                                    <input type="text" asp-for="@Model.JpTitle" class="form-control" disabled style="background-color: white !important">
+                                </div>
+                            </div> <div class="row mb-4">
+                                <label class="col-md-3 form-label">Vi Name :</label>
+                                <div class="col-md-9">
+                                    <input type="text" asp-for="@Model.ViTitle" class="form-control" disabled style="background-color: white !important">
+                                </div>
+                            </div>
+                           
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Az Description :</label>
+                                <div class="col-md-9">
+                                    <textarea type="text" asp-for="@Model.AzDescription" class="form-control" disabled style="background-color: white !important; height: 110px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">En Description :</label>
+                                <div class="col-md-9">
+                                    <textarea type="text" asp-for="@Model.EnDescription" class="form-control" disabled style="background-color: white !important; height: 110px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Jp Description :</label>
+                                <div class="col-md-9">
+                                    <textarea type="text" asp-for="@Model.JpDescription" class="form-control" disabled style="background-color: white !important; height: 110px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Vi Description :</label>
+                                <div class="col-md-9">
+                                    <textarea type="text" asp-for="@Model.ViDescription" class="form-control" disabled style="background-color: white !important; height: 110px;"></textarea>
+                                </div>
+                            </div>
+                           
+                            @*                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Category :</label>
+                                <div class="col-md-9">
+                                <p>@Model.Category.AzName</p>
+                                </div>
+                                </div>*@
+                            <div class="row mb-4">
+                                <label class="col-md-3 form-label">Image :</label>
+                                <div class="col-md-9">
+                                    <div class="position-relative">
+                                        <div class="product-image-slider" style="width: 220px; height: 220px; display: -webkit-box;">
+                                            @foreach (var productImage in Model.BlogFiles)
+                                            {
+                                                <figure class="border-radius-7" style="padding: 0, 20px; margin-right: 20px;">
+                                                    <img src="/@productImage.Path" alt="product image" style="max-width: 100%;" />
+                                                </figure>
+                                            }
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ROW-1 CLOSED -->
+        </div>
+        <!-- CONTAINER CLOSED -->
+    </div>
+</div>

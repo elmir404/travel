@@ -88,6 +88,10 @@ app.UseRequestLocalization(new RequestLocalizationOptions
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
+        name: "blogdetails",
+        pattern: "blog/{slug}",
+        defaults: new { controller = "Blog", action = "Detail" });
+    endpoints.MapControllerRoute(
        name: "areas",
        pattern: "{area:exists}/{controller=About}/{action=Index}/{id?}");
 
