@@ -157,7 +157,7 @@
     <value>お問い合わせ</value>
   </data>
   <data name="workingtel" xml:space="preserve">
-    <value>サポート時間: 月曜日から金曜日、午前 9 時から午後 5 時まで</value>
+    <value>サポート時間: 月曜日から金曜日、午前 9 時から午後 6 時まで</value>
   </data>
   <data name="YourEmail" xml:space="preserve">
     <value>メールアドレスを入力</value>
@@ -169,6 +169,6 @@
     <value>自分の名前を入力してください</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
-    <value>あなたの番号を入力してください</value>
+    <value>電話番号を入力してください</value>
   </data>
 </root>

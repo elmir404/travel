@@ -157,18 +157,18 @@
     <value>Bizimlə əlaqə saxlayın</value>
   </data>
   <data name="workingtel" xml:space="preserve">
-    <value>İş saatları: Bazar ertəsi - Cümə, 9:00-dan 17:00-a qədər</value>
+    <value>İş saatları: Bazar ertəsi - Cümə, 9:00-dan 18:00-a qədər</value>
   </data>
   <data name="YourEmail" xml:space="preserve">
-    <value>Emailinizi Yazın</value>
+    <value>Emailinizi yazın</value>
   </data>
   <data name="YourMessage" xml:space="preserve">
-    <value>Mesajınızı Yazın</value>
+    <value>Mesajınızı yazın</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>Adınızı Yazın</value>
+    <value>Adınızı yazın</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
-    <value>Nömrənizi Yazın</value>
+    <value>Nömrənizi yazın</value>
   </data>
 </root>
