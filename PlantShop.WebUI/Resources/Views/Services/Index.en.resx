@@ -120,6 +120,9 @@
   <data name="Beauty" xml:space="preserve">
     <value>Sakura Beauty</value>
   </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>Use Sakura's natural and quality beauty products. Take care of your beauty.</value>
+  </data>
   <data name="cons-desc" xml:space="preserve">
     <value>Benefit from our expert consultancy service in various business areas!</value>
   </data>
@@ -169,6 +172,6 @@
     <value>Employment service</value>
   </data>
   <data name="work-desc" xml:space="preserve">
-    <value>We are here to help you build your career!</value>
+    <value>We are here to build and develop your career!</value>
   </data>
 </root>

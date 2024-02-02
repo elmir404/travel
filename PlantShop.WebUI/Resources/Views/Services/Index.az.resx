@@ -120,6 +120,9 @@
   <data name="Beauty" xml:space="preserve">
     <value>Sakura Gözəllik</value>
   </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>Sakuranın təbii və keyfiyyətli gözəllik məhsullarından istifadə edin.Gözəlliyinizin qayğısına qalın.</value>
+  </data>
   <data name="cons-desc" xml:space="preserve">
     <value>Müxtəlif biznes sahələrində ekspert məsləhət xidmətimizdən yararlanın!</value>
   </data>
@@ -136,10 +139,16 @@
     <value>Təhsil xidməti</value>
   </data>
   <data name="education-desc" xml:space="preserve">
-    <value>Xarici Təhsil Xidmətlərimizlə dünya səviyyəli təhsil alın və gələcəyinizi formalaşdırın!</value>
+    <value>Xaricdə təhsil xidmətlərimizlə dünya səviyyəli təhsil alın və gələcəyinizi formalaşdırın!</value>
   </data>
   <data name="Header" xml:space="preserve">
     <value>XİDMƏT GÖSTƏRDİYİMİZ SAHƏLƏR</value>
+  </data>
+  <data name="It" xml:space="preserve">
+    <value />
+  </data>
+  <data name="it-desc" xml:space="preserve">
+    <value />
   </data>
   <data name="Law" xml:space="preserve">
     <value>Hüquq xidməti</value>
@@ -160,12 +169,12 @@
     <value>Tur və Səyahətlər</value>
   </data>
   <data name="travel-desc" xml:space="preserve">
-    <value>Bizimlə, xaricdəki dünya sizin əlinizdədir və biz, hər bir səyahətinizi unudulmaz və maraqli etmək üçün buradayıq.</value>
+    <value>Bizimlə,dünya sizin əlinizdədir və biz, hər bir səyahətinizi unudulmaz və maraqli etmək üçün buradayıq.</value>
   </data>
   <data name="Work" xml:space="preserve">
     <value>Məşğulluq Xidmətləri</value>
   </data>
   <data name="work-desc" xml:space="preserve">
-    <value>Biz, karyeranızı qurmağınıza köməkçi olmaq üçün buradayıq!</value>
+    <value>Biz, karyeranızı qurmağınız ve inkişaf etdirməyiniz üçün buradayıq!</value>
   </data>
 </root>

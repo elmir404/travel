@@ -120,6 +120,9 @@
   <data name="Beauty" xml:space="preserve">
     <value>さくらビューティー</value>
   </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>サクラの自然で高品質な美容製品を使って、あなたの美しさを大切にしてください。</value>
+  </data>
   <data name="cons-desc" xml:space="preserve">
     <value>さまざまなビジネス分野における当社の専門コンサルティング サービスをご利用ください。</value>
   </data>
@@ -166,6 +169,6 @@
     <value>ビジネスコンサルタント</value>
   </data>
   <data name="work-desc" xml:space="preserve">
-    <value>私たちはあなたのキャリア構築をお手伝いします！</value>
+    <value>私たちはあなたのキャリアを築き、発展させるためにここにいます!</value>
   </data>
 </root>
