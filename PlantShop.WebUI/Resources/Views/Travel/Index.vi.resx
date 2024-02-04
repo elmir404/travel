@@ -142,10 +142,10 @@
     <value>Áp dụng ngay bây giờ</value>
   </data>
   <data name="link-description" xml:space="preserve">
-    <value>Hãy cùng chúng tôi tạo nên trải nghiệm du lịch khó quên nhất trong cuộc đời bạn. Nhận thêm thông tin về các tour du lịch của chúng tôi bây giờ!</value>
+    <value>Hãy biến trải nghiệm du lịch khó quên nhất trong đời của bạn thành hiện thực với chúng tôi. Chúng tôi rất mong nhận được yêu cầu của bạn!</value>
   </data>
   <data name="link-title" xml:space="preserve">
-    <value>Trải nghiệm &lt;span class="text-second text-bold"&gt;Du lịch Sakura&lt;/span&gt; tuyệt vời</value>
+    <value>Trình bày bởi &lt;span class="text-second text-bold"&gt;Du lịch Sakura&lt;/span&gt;</value>
   </data>
   <data name="PageHeader" xml:space="preserve">
     <value>Dịch vụ du lịch của chúng tôi</value>

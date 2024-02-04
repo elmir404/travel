@@ -127,10 +127,10 @@
     <value>Email</value>
   </data>
   <data name="email-desc" xml:space="preserve">
-    <value>Dəstək komandamız standart iş saatları ərzində 24 saat ərzində sizinlə əlaqə saxlayacaq.</value>
+    <value>24 saat ərzində sizinlə əlaqə saxlayacağıq</value>
   </data>
   <data name="Head" xml:space="preserve">
-    <value>Sualınız var?Əlaqə saxlayın</value>
+    <value>Müraciət etməyinizi xahiş edirik</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Ana Səhifə</value>
@@ -166,7 +166,7 @@
     <value>Mesajınızı yazın</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>Adınızı yazın</value>
+    <value>Adınız ve soyadınız(Fiziki ve hüquqi şəxslər üçün)</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
     <value>Nömrənizi yazın</value>

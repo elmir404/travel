@@ -127,10 +127,10 @@
     <value>Email</value>
   </data>
   <data name="email-desc" xml:space="preserve">
-    <value>Our support team will get back to in 24-h during standard business hours.</value>
+    <value>We will contact you within 24 hours</value>
   </data>
   <data name="Head" xml:space="preserve">
-    <value>Have a question? Get in touch</value>
+    <value>Please apply</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -166,7 +166,7 @@
     <value>Write your message</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>Type your name</value>
+    <value>Your name and surname (for individuals and legal entities)</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
     <value>Enter your number</value>

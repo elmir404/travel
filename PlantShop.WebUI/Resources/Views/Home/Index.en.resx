@@ -216,6 +216,12 @@
   <data name="onboard-3" xml:space="preserve">
     <value>Joy</value>
   </data>
+  <data name="partners" xml:space="preserve">
+    <value>Our valued partners</value>
+  </data>
+  <data name="partners-title" xml:space="preserve">
+    <value>Some of our partners</value>
+  </data>
   <data name="service-description" xml:space="preserve">
     <value>Can't choose a gift?</value>
   </data>

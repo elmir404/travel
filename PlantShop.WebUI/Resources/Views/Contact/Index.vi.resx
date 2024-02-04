@@ -127,10 +127,10 @@
     <value>E-mail</value>
   </data>
   <data name="email-desc" xml:space="preserve">
-    <value>Nhóm hỗ trợ của chúng tôi sẽ liên hệ lại với bạn sau 24 giờ trong giờ làm việc tiêu chuẩn.</value>
+    <value>Chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ</value>
   </data>
   <data name="Head" xml:space="preserve">
-    <value>Bạn có câu hỏi? Hãy liên hệ</value>
+    <value>Làm ơn áp dụng</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Trang chủ</value>
@@ -166,7 +166,7 @@
     <value>Viết tin nhắn của bạn</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>Gõ tên của bạn</value>
+    <value>Họ và tên của bạn (đối với cá nhân và pháp nhân)</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
     <value>Nhập số của bạn</value>

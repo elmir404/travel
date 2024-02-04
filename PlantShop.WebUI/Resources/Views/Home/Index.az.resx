@@ -216,6 +216,12 @@
   <data name="onboard-3" xml:space="preserve">
     <value>Sevinc</value>
   </data>
+  <data name="partners" xml:space="preserve">
+    <value>Bizim dəyərli partnyorlarımız</value>
+  </data>
+  <data name="partners-title" xml:space="preserve">
+    <value>Partnyorlarımızdan bəziləri</value>
+  </data>
   <data name="service-description" xml:space="preserve">
     <value>Hədiyyə seçə bilmirsiniz?</value>
   </data>
@@ -224,11 +230,5 @@
   </data>
   <data name="service-description-2" xml:space="preserve">
     <value>Ən xoş sözlərinizi bizimlə çatdırın,yaxınlarınıza onları sevdiyinizi göstərin</value>
-  </data>
-  <data name="service-title" xml:space="preserve">
-    <value>ƏN GÖZƏL HƏDIYYƏ</value>
-  </data>
-  <data name="start" xml:space="preserve">
-    <value>Sevdikləriniz sevindirməyə başlayın</value>
   </data>
 </root>

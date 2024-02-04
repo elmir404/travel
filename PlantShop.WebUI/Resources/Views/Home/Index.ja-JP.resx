@@ -216,6 +216,12 @@
   <data name="onboard-3" xml:space="preserve">
     <value>Радость</value>
   </data>
+  <data name="partners" xml:space="preserve">
+    <value>私たちの大切なパートナー</value>
+  </data>
+  <data name="partners-title" xml:space="preserve">
+    <value>当社のパートナーの一部</value>
+  </data>
   <data name="service-description" xml:space="preserve">
     <value>Не можете выбрать подарок?</value>
   </data>

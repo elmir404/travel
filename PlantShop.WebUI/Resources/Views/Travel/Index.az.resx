@@ -121,7 +121,7 @@
     <value>Peşəkar xidmətimiz və fərdiləşdirilmiş tur paketlərimizlə səyahət zövqünü maksimuma çatdırın. Sakura Travel ilə xəyal etdiyiniz tətili yaşamaq imtiyazını kəşf edin!</value>
   </data>
   <data name="family-desc" xml:space="preserve">
-    <value>Ailənizlə keçirəcəyiniz bu özəl anlarda əyləncə və tarixlə dolu destinasyonlarımız sizi gözləyir. Xəyal etdiyiniz tətil üçün bizə qoşulun və təhlükəsiz kəşf edin!</value>
+    <value>Ailənizlə keçirəcəyiniz bu özəl anlarda əyləncə və tarixlə dolu məkanlarımız sizi gözləyir. Xəyal etdiyiniz tətil üçün bizə qoşulun və təhlükəsiz kəşf edin!</value>
   </data>
   <data name="family-title" xml:space="preserve">
     <value>Ailə Dostu</value>
@@ -142,10 +142,10 @@
     <value>İndi Müraciət Edin</value>
   </data>
   <data name="link-description" xml:space="preserve">
-    <value>Həyatınızın ən unudulmas səyahət təcrübəsini bizimlə reallaşdırın.İndi turlarımızla bağlı ətraflı məlumat alın!</value>
+    <value>Həyatınızın ən unudulmaz səyahət təcrübəsini bizimlə gərçəkləştirin.Biz sizin  müraciətinizi səbirsizliklə gözləyirik!</value>
   </data>
   <data name="link-title" xml:space="preserve">
-    <value>Möhtəşəm &lt;span class="text-second text-bold"&gt;Sakura Travel&lt;/span&gt; Təcrübəsi</value>
+    <value>&lt;span class="text-second text-bold"&gt;Sakura travel&lt;/span&gt; təqdim edir</value>
   </data>
   <data name="PageHeader" xml:space="preserve">
     <value>Səyahət Xidmətimiz</value>

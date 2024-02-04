@@ -127,10 +127,10 @@
     <value>Eメール</value>
   </data>
   <data name="email-desc" xml:space="preserve">
-    <value>当社のサポートチームが、標準営業時間内に 24 時間以内にご連絡いたします。</value>
+    <value>24時間以内にご連絡させていただきます</value>
   </data>
   <data name="Head" xml:space="preserve">
-    <value>ご質問がありましたらお問い合わせください</value>
+    <value>お問い合わせ</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>ホームページ</value>
@@ -166,7 +166,7 @@
     <value>メッセージを書いてください</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>自分の名前を入力してください</value>
+    <value>お名前と姓（個人および法人の場合）</value>
   </data>
   <data name="YourPhone" xml:space="preserve">
     <value>電話番号を入力してください</value>

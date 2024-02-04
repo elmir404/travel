@@ -145,10 +145,11 @@
     <value>XİDMƏT GÖSTƏRDİYİMİZ SAHƏLƏR</value>
   </data>
   <data name="It" xml:space="preserve">
-    <value />
+    <value>Programlaşdırma və dizayn xidmətləri</value>
+    <comment>İ</comment>
   </data>
   <data name="it-desc" xml:space="preserve">
-    <value />
+    <value>Veb sayt hazırlanmasından logo dizaynına qədər texnoloji xidmətlərimizlə biznesinizi zirvəyə daşıyırıq</value>
   </data>
   <data name="Law" xml:space="preserve">
     <value>Hüquq xidməti</value>

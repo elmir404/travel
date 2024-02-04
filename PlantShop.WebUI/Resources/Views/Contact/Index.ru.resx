@@ -117,11 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Мы свяжемся с вами как можно скорее</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Электронная почта</value>
   </data>
+  <data name="email-desc" xml:space="preserve">
+    <value>Мы свяжемся с вами в течение 24 часов</value>
+  </data>
+  <data name="Head" xml:space="preserve">
+    <value>Пожалуйста, подайте заявку</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Домашняя страница</value>
+  </data>
   <data name="information" xml:space="preserve">
-    <value>Контактная информация</value>
+    <value>Əlaqə Məlumatları</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Сообщение</value>
@@ -133,12 +148,27 @@
     <value>Телефон</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Поиск</value>
+    <value>Axtar</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Отправлять</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Оставить сообщение</value>
+    <value>Связаться с нами</value>
+  </data>
+  <data name="workingtel" xml:space="preserve">
+    <value>График работы «Помощь»: понедельник – пятница с 9:00 до 18:00.</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Введите адрес электронной почты</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Напишите свое сообщение</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Ваше имя и фамилия (для физических и юридических лиц)</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>Введите свой номер</value>
   </data>
 </root>

@@ -216,6 +216,12 @@
   <data name="onboard-3" xml:space="preserve">
     <value>Радость</value>
   </data>
+  <data name="partners" xml:space="preserve">
+    <value>Đối tác có giá trị của chúng tôi</value>
+  </data>
+  <data name="partners-title" xml:space="preserve">
+    <value>Một số đối tác của chúng tôi</value>
+  </data>
   <data name="service-description" xml:space="preserve">
     <value>Не можете выбрать подарок?</value>
   </data>

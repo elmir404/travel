@@ -144,6 +144,13 @@
   <data name="Header" xml:space="preserve">
     <value>NGÀNH CHÚNG TÔI LÀM VIỆC</value>
   </data>
+  <data name="It" xml:space="preserve">
+    <value>Dịch vụ lập trình và thiết kế</value>
+    <comment>İ</comment>
+  </data>
+  <data name="it-desc" xml:space="preserve">
+    <value>Từ phát triển trang web đến thiết kế logo, chúng tôi đưa doanh nghiệp của bạn lên đỉnh cao với các dịch vụ công nghệ của chúng tôi</value>
+  </data>
   <data name="Law" xml:space="preserve">
     <value>Dịch vụ pháp luật</value>
   </data>
