@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Beauty" xml:space="preserve">
+    <value>Vẻ đẹp hoa anh đào</value>
+  </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>Hãy sử dụng các sản phẩm làm đẹp tự nhiên và chất lượng của Sakura để chăm sóc sắc đẹp của bạn.</value>
+  </data>
   <data name="Consalting" xml:space="preserve">
     <value>Tư vấn kinh doanh</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Công ty của chúng tôi, chuyên về các lĩnh vực khác nhau như du lịch và luật, tạo nên sự khác biệt với hàng loạt dịch vụ cung cấp cho khách hàng. Từ kế hoạch kỳ nghỉ của bạn đến các dịch vụ pháp lý, đội ngũ chuyên gia của chúng tôi luôn sẵn sàng đáp ứng nhu cầu của bạn.</value>
+    <value>Công ty chúng tôi, chuyên về nhiều lĩnh vực khác nhau, tạo nên sự khác biệt với hàng loạt dịch vụ cung cấp cho khách hàng. Từ kế hoạch kỳ nghỉ của bạn đến các dịch vụ pháp lý, đội ngũ chuyên gia của chúng tôi luôn sẵn sàng đáp ứng nhu cầu của bạn.</value>
   </data>
   <data name="Education" xml:space="preserve">
     <value>Dịch vụ giáo dục</value>

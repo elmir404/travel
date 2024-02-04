@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Beauty" xml:space="preserve">
+    <value>Vẻ đẹp hoa anh đào</value>
+  </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>Hãy sử dụng các sản phẩm làm đẹp tự nhiên và chất lượng của Sakura để chăm sóc sắc đẹp của bạn.</value>
+  </data>
   <data name="cons-desc" xml:space="preserve">
     <value>Hưởng lợi từ dịch vụ tư vấn chuyên môn của chúng tôi trong các lĩnh vực kinh doanh khác nhau!</value>
   </data>
@@ -163,6 +169,6 @@
     <value>Dịch vụ việc làm</value>
   </data>
   <data name="work-desc" xml:space="preserve">
-    <value>Chúng tôi ở đây để giúp bạn xây dựng sự nghiệp của mình!</value>
+    <value>Chúng tôi ở đây để xây dựng và phát triển sự nghiệp của bạn!</value>
   </data>
 </root>

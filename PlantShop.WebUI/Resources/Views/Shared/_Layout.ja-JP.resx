@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>私たちについて</value>
+    <value>会社紹介</value>
   </data>
   <data name="Account" xml:space="preserve">
     <value>Счет</value>
@@ -226,6 +226,6 @@
     <value>Условия и положения</value>
   </data>
   <data name="Travel" xml:space="preserve">
-    <value>さくらトラベル</value>
+    <value>桜ラベル</value>
   </data>
 </root>

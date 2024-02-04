@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Beauty" xml:space="preserve">
+    <value>さくらビューティー</value>
+  </data>
+  <data name="beauty-desc" xml:space="preserve">
+    <value>サクラの自然で高品質な美容製品を使って、あなたの美しさを大切にしてください。</value>
+  </data>
   <data name="Consalting" xml:space="preserve">
     <value>雇用サービス</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>当社は、観光や法律などのさまざまな分野に特化しており、クライアントに提供する幅広いサービスで差別化を図っています。 休暇計画から法律サービスまで、当社の専門家チームがお客様のニーズにお応えします。</value>
+    <value>さまざまな分野に特化した当社は、お客様に提供する幅広いサービスで差別化を図ります。 休暇計画から法的サービスまで、当社の専門家チームがお客様のニーズにお応えします。</value>
   </data>
   <data name="Education" xml:space="preserve">
     <value>教育サービス</value>
