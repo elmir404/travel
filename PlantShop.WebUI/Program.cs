@@ -77,6 +77,7 @@ var supportedCultures = new[]
     new CultureInfo("en"),
     new CultureInfo("ja-JP"),
     new CultureInfo("vi"),
+    new CultureInfo("ru"),
 };
 
 app.UseRequestLocalization(new RequestLocalizationOptions
