@@ -135,6 +135,10 @@
   <data name="Header" xml:space="preserve">
     <value>私たちが働く業界</value>
   </data>
+  <data name="It" xml:space="preserve">
+    <value>プログラミングおよびデザインサービス</value>
+    <comment>İ</comment>
+  </data>
   <data name="Law" xml:space="preserve">
     <value>法律事務所</value>
   </data>
