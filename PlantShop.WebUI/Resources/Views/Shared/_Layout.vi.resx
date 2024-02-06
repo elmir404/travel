@@ -129,6 +129,9 @@
   <data name="Address" xml:space="preserve">
     <value>Địa chỉ</value>
   </data>
+  <data name="AddressDesc" xml:space="preserve">
+    <value>Azerbaijan, thành phố Baku, quận Yasamal, Ahmed Jamil 23</value>
+  </data>
   <data name="Basket" xml:space="preserve">
     <value>Корзина</value>
   </data>

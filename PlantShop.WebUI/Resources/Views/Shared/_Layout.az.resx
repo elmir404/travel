@@ -129,6 +129,9 @@
   <data name="Address" xml:space="preserve">
     <value>Ünvan</value>
   </data>
+  <data name="AddressDesc" xml:space="preserve">
+    <value>Azərbaycan, Bakı şəhəri, Yasamal rayonu, Əhməd Cəmil 23</value>
+  </data>
   <data name="Basket" xml:space="preserve">
     <value>Səbət</value>
   </data>

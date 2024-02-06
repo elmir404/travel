@@ -126,6 +126,9 @@
   <data name="AddHome" xml:space="preserve">
     <value>Post an Ad</value>
   </data>
+  <data name="AddressDesc" xml:space="preserve">
+    <value>Azerbaijan, Baku city, Yasamal district, Ahmed Jamil 23</value>
+  </data>
   <data name="Basket" xml:space="preserve">
     <value>Cart</value>
   </data>
