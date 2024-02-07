@@ -28,6 +28,8 @@ namespace PlantShop.DataAccess.Context
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogFile> BlogFiles { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderFile> SliderFiles { get; set; }
       
         public DbSet<F.File> Files { get; set; }
     }

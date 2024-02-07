@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bamboo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="castle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chreito" xml:space="preserve">
+    <value />
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Tối đa hóa sự tận hưởng chuyến đi của bạn với dịch vụ chuyên nghiệp và các gói tour tùy chỉnh của chúng tôi. Khám phá đặc quyền tận hưởng kỳ nghỉ mơ ước của bạn cùng Sakura Travel!</value>
   </data>
@@ -125,6 +134,15 @@
   </data>
   <data name="family-title" xml:space="preserve">
     <value>Gia đình thân thiện</value>
+  </data>
+  <data name="food" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fushimi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="geisha" xml:space="preserve">
+    <value />
   </data>
   <data name="guide" xml:space="preserve">
     <value>Hướng dẫn chuyên nghiệp</value>
@@ -138,6 +156,18 @@
   <data name="hotel-title" xml:space="preserve">
     <value>Du lịch thoải mái</value>
   </data>
+  <data name="kimono" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kimono-museum" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kioto" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kyoto" xml:space="preserve">
+    <value />
+  </data>
   <data name="link" xml:space="preserve">
     <value>Áp dụng ngay bây giờ</value>
   </data>
@@ -147,11 +177,20 @@
   <data name="link-title" xml:space="preserve">
     <value>Trình bày bởi &lt;span class="text-second text-bold"&gt;Du lịch Sakura&lt;/span&gt;</value>
   </data>
+  <data name="muesum" xml:space="preserve">
+    <value />
+  </data>
   <data name="PageHeader" xml:space="preserve">
     <value>Dịch vụ du lịch của chúng tôi</value>
   </data>
   <data name="PageTitle" xml:space="preserve">
     <value>Du lịch Sakura</value>
+  </data>
+  <data name="park" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ryokan" xml:space="preserve">
+    <value />
   </data>
   <data name="self" xml:space="preserve">
     <value>Tự hướng dẫn</value>
@@ -162,6 +201,12 @@
   <data name="special" xml:space="preserve">
     <value>Chuyến tham quan đặc biệt</value>
   </data>
+  <data name="street" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tea" xml:space="preserve">
+    <value />
+  </data>
   <data name="team-desc" xml:space="preserve">
     <value>Đội ngũ chuyên gia chuyên về trải nghiệm du lịch của chúng tôi làm việc chăm chỉ để biến ước mơ của khách hàng thành hiện thực.</value>
   </data>
@@ -171,6 +216,12 @@
   <data name="theme" xml:space="preserve">
     <value>Chuyến tham quan theo chủ đề</value>
   </data>
+  <data name="travel-desc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="travel-title" xml:space="preserve">
+    <value />
+  </data>
   <data name="TravelHeader" xml:space="preserve">
     <value>Ưu điểm của việc đi du lịch với chúng tôi</value>
   </data>
@@ -179,5 +230,8 @@
   </data>
   <data name="trending" xml:space="preserve">
     <value>Địa điểm thịnh hành</value>
+  </data>
+  <data name="waterfall" xml:space="preserve">
+    <value />
   </data>
 </root>

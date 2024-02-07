@@ -258,6 +258,64 @@ namespace PlantShop.DataAccess.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("File");
                 });
 
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Slider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AzDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AzTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("EditDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("EditUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EnDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EnTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("JpDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("JpTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RegDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("RegUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RuDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RuTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ViDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ViTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
+                });
+
             modelBuilder.Entity("PlantShop.DataAccess.Entities.Users.ApplicationRole", b =>
                 {
                     b.Property<int>("Id")
@@ -380,6 +438,18 @@ namespace PlantShop.DataAccess.Migrations
                     b.HasDiscriminator().HasValue("BlogFile");
                 });
 
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.SliderFile", b =>
+                {
+                    b.HasBaseType("PlantShop.DataAccess.Entities.Main.File");
+
+                    b.Property<int?>("SliderId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("SliderId");
+
+                    b.HasDiscriminator().HasValue("SliderFile");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("PlantShop.DataAccess.Entities.Users.ApplicationRole", null)
@@ -440,9 +510,23 @@ namespace PlantShop.DataAccess.Migrations
                     b.Navigation("Blog");
                 });
 
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.SliderFile", b =>
+                {
+                    b.HasOne("PlantShop.DataAccess.Entities.Main.Slider", "Slider")
+                        .WithMany("SliderFiles")
+                        .HasForeignKey("SliderId");
+
+                    b.Navigation("Slider");
+                });
+
             modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Blog", b =>
                 {
                     b.Navigation("BlogFiles");
+                });
+
+            modelBuilder.Entity("PlantShop.DataAccess.Entities.Main.Slider", b =>
+                {
+                    b.Navigation("SliderFiles");
                 });
 #pragma warning restore 612, 618
         }

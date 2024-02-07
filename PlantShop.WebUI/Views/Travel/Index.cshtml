@@ -1,24 +1,280 @@
 ﻿@inject IViewLocalizer Localizer
-<section class="breadcrumb-area banner-1" data-background="~/images/banner/9.jpg">
-    <div class="text-block">
+@section Style{
+    <style>
+        .custom-nav .nav-list li a.menu-links{
+            color: #ffff;
+        }
+        @@media (min-width: 1200px){
+            .container, .container-lg, .container-md, .container-sm, .container-xl {
+                max-width: 1400px;
+            }
+        }
+    </style>
+}
+<section class="hero-section hero-digital-agency-1 branding-agency video-bg-">
+    <img class="full-video" data-mask="3" src="~/images/hero/japon.jpg" autoplay="" muted="" loop="">
+    <div class="text-block niwax" data-rellax-speed="-3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 v-center">
-                    <div class="bread-inner">
-                        <div class="bread-menu">
-                            <ul>
-                                <li><a asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
-                                <li><a asp-controller="About" asp-action="Index">@Localizer["PageHeader"]</a></li>
-                            </ul>
-                        </div>
-                        <div class="bread-title">
-                            <h2>@Localizer["PageTitle"]</h2>
-                        </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9 v-center">
+                    <div class="header-heading">
+                        <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">We Build Scalable & Smart Solution</h1>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, risus sit amet auctor sodales, justo erat tempor eros.</p>
+                        <a asp-action="Index" asp-controller="Contact" class="btn-main bg-btn4 lnk wow fadeInUp" data-wow-delay=".6s">@Localizer["link"]<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<div class="niwax-company-awards-cover">
+    <div class="container">
+        <div class="row v-center">
+
+
+            <div class="companytime nxlp-a col-lg-3">
+                <p>20 Yesrs* <span>Industry Experience</span></p>
+            </div>
+
+            <div class="companyawards col-lg-9">
+                <div class="niwax-logo-awards niwax-logo-slider owl-carousel">
+
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/house.svg" alt="img">
+                        <h6>Real estate</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/travel-case.svg" alt="img">
+                        <h6>Tour &amp; Travels</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/video-tutorials.svg" alt="img">
+                        <h6>Education</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/taxi.svg" alt="img">
+                        <h6>Transport</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/event.svg" alt="img">
+                        <h6>Event</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/smartphone.svg" alt="img">
+                        <h6>eCommerce</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/joystick.svg" alt="img">
+                        <h6>Game</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/healthcare.svg" alt="img">
+                        <h6>Healthcare</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/money-growth.svg" alt="img">
+                        <h6>Finance</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/baker.svg" alt="img">
+                        <h6>Restaurant</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/mobile-app.svg" alt="img">
+                        <h6>On-Demand</h6>
+                    </div>
+
+                    <div class="industry-workfors">
+                        <img src="~/images/icons/groceries.svg" alt="img">
+                        <h6>Grocery</h6>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="portfolio-section pad-tb">
+	<div class="container">
+		<div class="row justify-content-center ">
+			<div class="col-lg-8">
+				<div class="common-heading">
+					<span>Our Work</span>
+					<h2 class="mb20">Our Latest Creative Work</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col mt40 wow fadeIn" data-wow-delay="0.2s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+						<a href="#"><img src="~/images/travel/bamboo.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Pets Care & Training App</a></h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.4s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+                        <a href="#"><img src="~/images/travel/castle.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Car Rental App</a></h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.6s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+                        <a href="#"><img src="~/images/travel/shibuya.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Event Management App</a></h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.8s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+                        <a href="#"><img src="~/images/travel/chreito.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Restaurant App</a></h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+                        <a href="#"><img src="~/images/travel/food.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Restaurant / Hotel App</a></h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+				<div class="isotope_item up-hor">
+					<div class="item-image">
+                        <a href="#"><img src="~/images/travel/budda.jpg" alt="image" class="img-fluid" /> </a>
+					</div>
+					<div class="item-info-div shdo">
+						<h4><a href="#">Super Mart App</a></h4>
+						
+					</div>
+				</div>
+			</div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/kimono.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/kioto.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/kimono-museum.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/street.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/kyoto.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/waterfall.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/fushimi.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
+                <div class="isotope_item up-hor">
+                    <div class="item-image">
+                        <a href="#"><img src="~/images/travel/waterfall.jpg" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info-div shdo">
+                        <h4><a href="#">Super Mart App</a></h4>
+
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
 </section>
 <!--Start About-->
 <section class="why-choos-lg pad-tb">
@@ -55,7 +311,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="single-image"> <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/eb00e33b-c87f-4f86-8d8b-7c33707ca8c7/oh3HUrx9wY.json" class="img-fluid" background="transparent" speed="1"  loop  autoplay direction="1" mode="normal"></lottie-player> </div>
+                <div class="single-image">  </div>
                 <div class="cta-card mt60 text-center">
                     <h3>@Localizer["link-title"]</h3>
                     <p>@Localizer["link-description"]</p>
@@ -67,3 +323,38 @@
 </section>
 <!--End About-->
 @await Component.InvokeAsync("Blog")
+<script>
+    //Owl-Carousel - awards card
+    var owl = $('.niwax-logo-slider');
+    owl.owlCarousel({
+          loop: true,
+          center:false,
+          autoplay: true,
+          margin: 20,
+          nav: false,
+          dots: false,
+          autoplayTimeout: 3500,
+          autoplayHoverPause: true,
+          smartSpeed: 2000,
+          responsive: {
+                0: {
+                    items: 3,
+                },
+                520: {
+                    items: 3
+                },
+                768: {
+                    items: 4
+                },
+                1200: {
+                    items: 4
+                },
+                1400: {
+                    items: 5
+                },
+                1600: {
+                    items: 6
+                },
+            }
+          });
+</script>

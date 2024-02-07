@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bamboo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="castle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chreito" xml:space="preserve">
+    <value />
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Peşəkar xidmətimiz və fərdiləşdirilmiş tur paketlərimizlə səyahət zövqünü maksimuma çatdırın. Sakura Travel ilə xəyal etdiyiniz tətili yaşamaq imtiyazını kəşf edin!</value>
   </data>
@@ -125,6 +134,15 @@
   </data>
   <data name="family-title" xml:space="preserve">
     <value>Ailə Dostu</value>
+  </data>
+  <data name="food" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fushimi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="geisha" xml:space="preserve">
+    <value />
   </data>
   <data name="guide" xml:space="preserve">
     <value>Peşəkar Bələdçilər</value>
@@ -138,6 +156,18 @@
   <data name="hotel-title" xml:space="preserve">
     <value>Komfortlu Səyahət</value>
   </data>
+  <data name="kimono" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kimono-museum" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kioto" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kyoto" xml:space="preserve">
+    <value />
+  </data>
   <data name="link" xml:space="preserve">
     <value>İndi Müraciət Edin</value>
   </data>
@@ -147,11 +177,20 @@
   <data name="link-title" xml:space="preserve">
     <value>&lt;span class="text-second text-bold"&gt;Sakura travel&lt;/span&gt; təqdim edir</value>
   </data>
+  <data name="muesum" xml:space="preserve">
+    <value />
+  </data>
   <data name="PageHeader" xml:space="preserve">
     <value>Səyahət Xidmətimiz</value>
   </data>
   <data name="PageTitle" xml:space="preserve">
     <value>Sakura Travel</value>
+  </data>
+  <data name="park" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ryokan" xml:space="preserve">
+    <value />
   </data>
   <data name="self" xml:space="preserve">
     <value>Sərbəst Turlar</value>
@@ -162,6 +201,12 @@
   <data name="special" xml:space="preserve">
     <value>Özel Turlar</value>
   </data>
+  <data name="street" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tea" xml:space="preserve">
+    <value />
+  </data>
   <data name="team-desc" xml:space="preserve">
     <value>Səyahət təcrübəsində ixtisaslaşmış peşəkar komandamız müştərilərimizin arzularını gerçəkləşdirmək üçün diqqətlə çalışır.</value>
   </data>
@@ -171,6 +216,12 @@
   <data name="theme" xml:space="preserve">
     <value>Mövzu Turu</value>
   </data>
+  <data name="travel-desc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="travel-title" xml:space="preserve">
+    <value />
+  </data>
   <data name="TravelHeader" xml:space="preserve">
     <value>Bizimlə Səyahətin Üstünlükləri</value>
   </data>
@@ -179,5 +230,8 @@
   </data>
   <data name="trending" xml:space="preserve">
     <value>Trend Məkanlar</value>
+  </data>
+  <data name="waterfall" xml:space="preserve">
+    <value />
   </data>
 </root>

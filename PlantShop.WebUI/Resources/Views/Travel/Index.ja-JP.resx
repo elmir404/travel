@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bamboo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="castle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chreito" xml:space="preserve">
+    <value />
+  </data>
   <data name="Description" xml:space="preserve">
     <value>当社のプロフェッショナルなサービスとカスタマイズされたツアーパッケージで旅行を最大限に楽しんでください。 サクラトラベルで夢の休暇を過ごす特権を発見してください!</value>
   </data>
@@ -125,6 +134,15 @@
   </data>
   <data name="family-title" xml:space="preserve">
     <value>家族向けの</value>
+  </data>
+  <data name="food" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fushimi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="geisha" xml:space="preserve">
+    <value />
   </data>
   <data name="guide" xml:space="preserve">
     <value>プロのガイド</value>
@@ -138,6 +156,18 @@
   <data name="hotel-title" xml:space="preserve">
     <value>快適な旅行</value>
   </data>
+  <data name="kimono" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kimono-museum" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kioto" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kyoto" xml:space="preserve">
+    <value />
+  </data>
   <data name="link" xml:space="preserve">
     <value>今すぐお申し込みください</value>
   </data>
@@ -147,11 +177,20 @@
   <data name="link-title" xml:space="preserve">
     <value>提供：&lt;span class="text-second text-bold"&gt;さくらトラベル&lt;/span&gt;</value>
   </data>
+  <data name="muesum" xml:space="preserve">
+    <value />
+  </data>
   <data name="PageHeader" xml:space="preserve">
     <value>当社の旅行サービス</value>
   </data>
   <data name="PageTitle" xml:space="preserve">
     <value>さくらトラベル</value>
+  </data>
+  <data name="park" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ryokan" xml:space="preserve">
+    <value />
   </data>
   <data name="self" xml:space="preserve">
     <value>無料ツアー</value>
@@ -162,6 +201,12 @@
   <data name="special" xml:space="preserve">
     <value>プライベートツアー</value>
   </data>
+  <data name="street" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tea" xml:space="preserve">
+    <value />
+  </data>
   <data name="team-desc" xml:space="preserve">
     <value>旅行体験を専門とする当社のプロフェッショナルチームは、お客様の夢の実現に向けて熱心に取り組んでいます。</value>
   </data>
@@ -171,6 +216,12 @@
   <data name="theme" xml:space="preserve">
     <value>テーマツアー</value>
   </data>
+  <data name="travel-desc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="travel-title" xml:space="preserve">
+    <value />
+  </data>
   <data name="TravelHeader" xml:space="preserve">
     <value>当社で旅行するメリット</value>
   </data>
@@ -179,5 +230,8 @@
   </data>
   <data name="trending" xml:space="preserve">
     <value>話題の場所</value>
+  </data>
+  <data name="waterfall" xml:space="preserve">
+    <value />
   </data>
 </root>

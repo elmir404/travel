@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bamboo" xml:space="preserve">
+    <value>Прогуляться по бамбуковой роще Сагано</value>
+  </data>
+  <data name="budda" xml:space="preserve">
+    <value>Прийти в восторг от размеров Будды в Наре</value>
+  </data>
+  <data name="castle" xml:space="preserve">
+    <value>Увидеть один из самых древних замков Японии</value>
+  </data>
+  <data name="chreito" xml:space="preserve">
+    <value>Увидеть пагоду Чурейто</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Maximize your travel enjoyment with our professional service and customized tour packages. Discover the privilege of living your dream vacation with Sakura Travel!</value>
+  </data>
+  <data name="family-desc" xml:space="preserve">
+    <value>Our destinations full of fun and history await you during these special moments with your family. Join us for your dream vacation and explore safely!</value>
+  </data>
+  <data name="family-title" xml:space="preserve">
+    <value>Family Friendly</value>
+  </data>
+  <data name="food" xml:space="preserve">
+    <value>Посетить рынок морепродуктов</value>
+  </data>
+  <data name="fushimi" xml:space="preserve">
+    <value>Пройти сквозь тысячи красных ворот святилища Фусими Инари</value>
+  </data>
+  <data name="geisha" xml:space="preserve">
+    <value>Познакомиться с майко - ученицей гейши</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>Professional Guides</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="hotel-dec" xml:space="preserve">
+    <value>We have carefully considered every detail throughout your travels and strive to provide you with the best possible experience. Enjoy a comfortable trip!</value>
+  </data>
+  <data name="hotel-title" xml:space="preserve">
+    <value>Comfortable Travel</value>
+  </data>
+  <data name="kimono" xml:space="preserve">
+    <value>Примерить традиционное японское кимоно</value>
+  </data>
+  <data name="kimono-museum" xml:space="preserve">
+    <value>Посетите музей кимоно</value>
+  </data>
+  <data name="kioto" xml:space="preserve">
+    <value>Увидеть золотой храм в Киото</value>
+  </data>
+  <data name="kyoto" xml:space="preserve">
+    <value>Прогуляться по кварталу Гион</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Apply Now</value>
+  </data>
+  <data name="link-description" xml:space="preserve">
+    <value>Make the most unforgettable travel experience of your life a reality with us. We are looking forward to your request!</value>
+  </data>
+  <data name="link-title" xml:space="preserve">
+    <value>Presented by &lt;span class="text-second text-bold"&gt;Sakura travel&lt;/span&gt;</value>
+  </data>
+  <data name="muesum" xml:space="preserve">
+    <value>Посетить диджитал-музей в Токио.</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Our Travel Service</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Sakura Travel</value>
+  </data>
+  <data name="park" xml:space="preserve">
+    <value>Кормить ручных оленей в парке Нара</value>
+  </data>
+  <data name="ryokan" xml:space="preserve">
+    <value>Пожить в рекане с онсеном</value>
+  </data>
+  <data name="self" xml:space="preserve">
+    <value>Self Guides</value>
+  </data>
+  <data name="shibuya" xml:space="preserve">
+    <value>Побывать на сумасшедшем перекрестке Сибуя</value>
+  </data>
+  <data name="sight" xml:space="preserve">
+    <value>Sight Seeing</value>
+  </data>
+  <data name="special" xml:space="preserve">
+    <value>Special Tours</value>
+  </data>
+  <data name="street" xml:space="preserve">
+    <value>Прогуляться по шумным улицам Токио</value>
+  </data>
+  <data name="tea" xml:space="preserve">
+    <value>Продегустировать чай мать</value>
+  </data>
+  <data name="team-desc" xml:space="preserve">
+    <value>Our team of professionals specializing in travel experience work diligently to make our customers' dreams come true.</value>
+  </data>
+  <data name="team-title" xml:space="preserve">
+    <value>Professional Team</value>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>Theme Tours</value>
+  </data>
+  <data name="train" xml:space="preserve">
+    <value>Проехаться по скоростному поезду — синкансену</value>
+  </data>
+  <data name="travel-desc" xml:space="preserve">
+    <value>Путешествие, наполненное впечатлениями</value>
+  </data>
+  <data name="travel-title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TravelHeader" xml:space="preserve">
+    <value>Advantages of Traveling with Us</value>
+  </data>
+  <data name="TravelTitle" xml:space="preserve">
+    <value>Enjoy the benefits of traveling with Sakura Travel</value>
+  </data>
+  <data name="trending" xml:space="preserve">
+    <value>Trending Places</value>
+  </data>
+  <data name="waterfall" xml:space="preserve">
+    <value>Увидеть один из самых красивых водопадов Японии</value>
+  </data>
+</root>
