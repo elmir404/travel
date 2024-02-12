@@ -9,6 +9,7 @@ namespace PlantShop.Business.Services.Abstractions.Main
         Task<ServiceResult> GetSlider(int id);
         Task<ServiceResult> GetSliderForUpdate(int id);
         Task<ServiceResult> GetSliders();
+        Task<ServiceResult> GetLastSlider();
         Task<ServiceResult> UpdateSlider(UpdateSliderDto updateSliderDto);
         Task<ServiceResult> DeleteSlider(int id);
     }

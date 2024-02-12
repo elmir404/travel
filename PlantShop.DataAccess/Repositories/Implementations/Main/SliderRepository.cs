@@ -16,6 +16,11 @@ namespace PlantShop.DataAccess.Repositories.Implementations.Main
             return await GetAsQueryable().Include(x => x.SliderFiles).ToListAsync();
         }
 
+        public async Task<Slider> GetLast()
+        {
+            return await GetAsQueryable().Include(x => x.SliderFiles).OrderBy(x=>x.Id).LastOrDefaultAsync();
+        }
+
         public async Task<Slider> GetSlider(int id)
         {
             return await GetAsQueryable().Include(x => x.SliderFiles).FirstOrDefaultAsync(x => x.Id == id);

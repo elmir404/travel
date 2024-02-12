@@ -1,4 +1,13 @@
-﻿@inject IViewLocalizer Localizer
+﻿@model GetSliderDto
+@inject IViewLocalizer Localizer
+@{
+
+
+    var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
+   
+
+
+}
 @section Style{
     <style>
         .custom-nav .nav-list li a.menu-links{
@@ -12,14 +21,42 @@
     </style>
 }
 <section class="hero-section hero-digital-agency-1 branding-agency video-bg-">
-    <img class="full-video" data-mask="3" src="~/images/hero/japon.jpg" autoplay="" muted="" loop="">
+    @if (@Model.SliderFiles.Count() > 0)
+    {
+        <img class="full-video" data-mask="3" src="@Model.SliderFiles[0].Path" alt="@Model.SliderFiles[0].FileName" autoplay="" muted="" loop="">
+
+    }
     <div class="text-block niwax" data-rellax-speed="-3">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-9 v-center">
                     <div class="header-heading">
-                        <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">We Build Scalable & Smart Solution</h1>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, risus sit amet auctor sodales, justo erat tempor eros.</p>
+                       
+                        @if (culture == "az")
+                        {
+                            <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">@Model.AzTitle</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">@Model.AzDescription</p>
+                        }
+                        @if (culture == "en")
+                        {
+                            <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">@Model.EnTitle</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">@Model.EnDescription</p>
+                        }
+                        @if (culture == "ru")
+                        {
+                            <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">@Model.RuTitle</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">@Model.RuDescription</p>
+                        }
+                        @if (culture == "vi")
+                        {
+                            <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">@Model.ViTitle</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">@Model.ViDescription</p>
+                        }
+                        @if (culture == "ja-Jp")
+                        {
+                            <h1 class="wow fadeInUp text-effect-1" data-wow-delay=".2s">@Model.JpTitle</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">@Model.JpDescription</p>
+                        }
                         <a asp-action="Index" asp-controller="Contact" class="btn-main bg-btn4 lnk wow fadeInUp" data-wow-delay=".6s">@Localizer["link"]<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                     </div>
                 </div>
@@ -27,256 +64,7 @@
         </div>
     </div>
 </section>
-<div class="niwax-company-awards-cover">
-    <div class="container">
-        <div class="row v-center">
 
-
-            <div class="companytime nxlp-a col-lg-3">
-                <p>20 Yesrs* <span>Industry Experience</span></p>
-            </div>
-
-            <div class="companyawards col-lg-9">
-                <div class="niwax-logo-awards niwax-logo-slider owl-carousel">
-
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/house.svg" alt="img">
-                        <h6>Real estate</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/travel-case.svg" alt="img">
-                        <h6>Tour &amp; Travels</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/video-tutorials.svg" alt="img">
-                        <h6>Education</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/taxi.svg" alt="img">
-                        <h6>Transport</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/event.svg" alt="img">
-                        <h6>Event</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/smartphone.svg" alt="img">
-                        <h6>eCommerce</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/joystick.svg" alt="img">
-                        <h6>Game</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/healthcare.svg" alt="img">
-                        <h6>Healthcare</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/money-growth.svg" alt="img">
-                        <h6>Finance</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/baker.svg" alt="img">
-                        <h6>Restaurant</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/mobile-app.svg" alt="img">
-                        <h6>On-Demand</h6>
-                    </div>
-
-                    <div class="industry-workfors">
-                        <img src="~/images/icons/groceries.svg" alt="img">
-                        <h6>Grocery</h6>
-                    </div>
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section class="portfolio-section pad-tb">
-	<div class="container">
-		<div class="row justify-content-center ">
-			<div class="col-lg-8">
-				<div class="common-heading">
-					<span>Our Work</span>
-					<h2 class="mb20">Our Latest Creative Work</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-sm-6 col mt40 wow fadeIn" data-wow-delay="0.2s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-						<a href="#"><img src="~/images/travel/bamboo.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Pets Care & Training App</a></h4>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.4s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-                        <a href="#"><img src="~/images/travel/castle.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Car Rental App</a></h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.6s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-                        <a href="#"><img src="~/images/travel/shibuya.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Event Management App</a></h4>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="0.8s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-                        <a href="#"><img src="~/images/travel/chreito.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Restaurant App</a></h4>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-                        <a href="#"><img src="~/images/travel/food.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Restaurant / Hotel App</a></h4>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-				<div class="isotope_item up-hor">
-					<div class="item-image">
-                        <a href="#"><img src="~/images/travel/budda.jpg" alt="image" class="img-fluid" /> </a>
-					</div>
-					<div class="item-info-div shdo">
-						<h4><a href="#">Super Mart App</a></h4>
-						
-					</div>
-				</div>
-			</div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/kimono.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/kioto.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/kimono-museum.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/street.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-             <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/kyoto.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/waterfall.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/fushimi.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt40 wow fadeIn" data-wow-delay="1.2s">
-                <div class="isotope_item up-hor">
-                    <div class="item-image">
-                        <a href="#"><img src="~/images/travel/waterfall.jpg" alt="image" class="img-fluid" /> </a>
-                    </div>
-                    <div class="item-info-div shdo">
-                        <h4><a href="#">Super Mart App</a></h4>
-
-                    </div>
-                </div>
-            </div>
-		</div>
-	</div>
-</section>
-<!--Start About-->
 <section class="why-choos-lg pad-tb">
     <div class="container">
         <div class="row">
@@ -343,6 +131,7 @@
                 520: {
                     items: 3
                 },
+                \
                 768: {
                     items: 4
                 },

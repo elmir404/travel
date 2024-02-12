@@ -22,6 +22,8 @@ namespace PlantShop.Business
             services.AddScoped<IContactService, ContactService>();
             services.AddScoped<IBlogFileService, BlogFileService>();
             services.AddScoped<IBlogService, BlogService>();
+            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<ISliderFileService, SliderFileService>();
             services.AddAutoMapper(cfg =>
             {
                 cfg.ShouldMapProperty = p => p.GetMethod.IsPublic || p.GetMethod.IsAssembly;

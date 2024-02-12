@@ -141,6 +141,23 @@ namespace PlantShop.Business.Services.Implementations.Main
             return new ServiceResult(false);
         }
 
+        public async Task<ServiceResult> GetLastSlider()
+        {
+            try
+            {
+                var result = await _sliderRepository.GetLast();
+                if (result == null)
+                    return new ServiceResult(false, "data not found");
+
+                var response = _mapper.Map<GetSliderDto>(result);
+                return new ServiceResult(true, response);
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResult(false, ex.Message);
+            }
+        }
+
         #endregion
     }
 }

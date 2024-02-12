@@ -6,5 +6,6 @@ namespace PlantShop.DataAccess.Repositories.Abstractions.Main
     {
         Task<IEnumerable<Slider>> GetAllSliders();
         Task<Slider> GetSlider(int id);
+        Task<Slider> GetLast();
     }
 }
